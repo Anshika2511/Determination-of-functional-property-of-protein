@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determination of functional property of protein</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container" id="bod">  
+        <img id="labpic" src="Images/lab1.png" alt="lab">  
+       
+        <div class="instructionsBox">
+             <h6>Instructions</h6> 
+             <h1 id="message">start</h1>
+        </div>
+        
+        
+         
+        <div class="instruments">
+    <!--- <img id="s1b" src="Images/sback.png" alt="">
+            <img  id="s2b" src="Images/sback.png" alt="">
+            <img id="s3b" src="Images/sback.png" alt="">
+            <img id="s4b" src="Images/sback.png" alt="">
+            <img  id="s5b" src="Images/sback.png" alt="">
+-->
+           <img id="whipmachine" src="Images/whipmachine.png" alt="">
+           <button id="ye1" class="yellow-button" onclick="y1()">ON</button>
+           <button id="ye2" class="yellow-button" onclick="y2()">OFF</button>
+       
+
+            <img id="gms1" src="Images/1gm.png" alt="">
+            <img id="gms2" src="Images/1gm.png" alt="">
+            <img id="gms3" src="Images/1gm.png" alt="">
+            <img id="gms4" src="Images/1gm.png" alt="">
+            <img id="gms5" src="Images/1gm.png" alt="">
+        
+            <img id="b1" src="Images/beaker1.png"  alt="">
+            <img id="b2" src="Images/beaker2.png"  alt="">
+            <img id="b3" src="Images/beaker3.png" alt="">
+            <img id="b4" src="Images/beaker4.png" alt="">
+             <img id="b5" src="Images/beaker5.png" alt="">
+
+             <img id="b1gm" src="Images/beaker1gm.png" onclick="move1()" alt="">
+             <img  id="b2gm"src="Images/beaker2gm.png" onclick="move2()" alt="">
+             <img  id="b3gm" src="Images/beaker3gm.png" onclick="move3()"alt="">
+             <img   id="b4gm"src="Images/beaker4gm.png"onclick="move4()" alt="">
+             <img  id="b5gm"src="Images/beaker5gm.png" onclick="move5()"alt="">
+
+            <img id="emp1" src="Images/emp1.png" alt="">
+            <img  id="emp2" src="Images/emp2.png" alt="">
+            <img id="emp3"  src="Images/emp3.png" alt="">
+            <img id="emp4" src="Images/emp4.png" alt="">
+            <img id="emp5"  src="Images/emp5.png" alt="">
+
+             <img id="b1foam" src="Images/b1foam.png"  onclick="back1(),up1()"  alt="">
+             <img id="b2foam" src="Images/b2foam.png"  onclick="back2(),up2()" alt="">
+             <img id="b3foam" src="Images/b3foam.png"  onclick="back3(),up3()" alt="">
+             <img  id="b4foam"src="Images/b4foam.png" onclick="back4(),up4()"  alt="">
+             <img id="b5foam"src="Images/b5foam.png"  onclick="back5(),up5()" alt="">
+<!-- <img id="s1m" src="Images/s1middle.png" alt="">
+            <img  id="s2m" src="Images/s2middle.png" alt="">
+            <img id="s3m" src="Images/s3middle.png" alt="">
+            <img id="s4m" src="Images/s4middle.png" alt="">
+            <img  id="s5m" src="Images/s5middle.png" alt="">
+
+            
+            <img id="s1f" src="Images/sfront.png" onclick="move1()" alt="">
+            <img  id="s2f" src="Images/sfront.png"  onclick="move2()" alt="">
+            <img id="s3f" src="Images/sfront.png"  onclick="move3()"  alt="">
+            <img id="s4f" src="Images/sfront.png"  onclick="move4()" alt="">
+            <img  id="s5f" src="Images/sfront.png"  onclick="move5()"  alt="">
+-->
+            <img id="c1"  src="Images/cylinfoam.png" alt="">
+            <img  id="c2" src="Images/cylinfoam.png" alt="">
+            <img id="c3"  src="Images/cylinfoam.png" alt="">
+            <img  id="c4" src="Images/cylinfoam.png" alt="">
+            <img id="c5"  src="Images/cylinfoam.png" alt="">
+
+            <img id="cylin" src="Images/measuring-cylinder.png" alt="">
+            <img id="cylin1" src="Images/measuring-cylinder.png" alt="">
+            <img id="cylin2" src="Images/measuring-cylinder.png" alt="">
+            <img id="cylin3" src="Images/measuring-cylinder.png" alt="">
+            <img id="cylin4" src="Images/measuring-cylinder.png" alt="">
+            <img id="cylin5" src="Images/measuring-cylinder.png" alt="">
+             
+            
+            <img id="wm" src="Images/weighing-scale.png" alt="">
+            <p id="number">0.0gm</p>
+            <img id="powder" src="Images/powder.png" alt="">
+           <img id="bowl" src="Images/bowl.png" alt="">
+           <img id="spatula" src="Images/spatula.png" onclick="pick()" alt="">
+           <img id="sgm" src="Images/spoon1gm.png" alt="">
+           <img id="offb" src="Images/Off.png" onclick="off()" alt="">
+           <img id="tareb" src="Images/Tare.png" onclick="tare()" alt="">
+           <img id="onb" src="Images/On.png" onclick="on()" alt="">
+           <img id="petri" src="Images/petri.png" onclick="place()" alt="">
+           <img id="fp" src="Images/filledpet.png" onclick="pour()" alt="">
+           <img id="fp2" src="Images/filledpet.png" onclick="pour()" alt="">
+           <img id="fp3" src="Images/filledpet.png" onclick="pour()" alt="">
+           <img id="fp4" src="Images/filledpet.png" onclick="pour()" alt="">
+           <img id="fp5" src="Images/filledpet.png" onclick="pour()" alt="">
+           <img id="gm" src="Images/1gm.png" alt="">
+           
+           <button id="nxt" onclick="nxt()">NEXT</button>
+           <img id="toptable" src="images/topview.png" alt="topview">
+           <img id="FC" src="Images/FCformula.png" alt="">
+           <img id="FS" src="Images/FSformula.png" alt="">
+          
+           <table id="mytable" >
+            <tr>
+              <th>Solution</th>
+              <th>Volume of foam(ml)</th>
+            </tr>
+            <tr>
+              <td>S1</td>
+              <td id="z1"></td>
+            </tr>
+            <tr>
+              <td>S2</td>
+              <td id="z2"></td>
+            </tr>
+            <tr>
+              <td>S3</td>
+              <td id="z3"></td>
+            </tr>
+            <tr>
+              <td>S4</td>
+              <td id="z4"></td>        
+            </tr>
+            <tr>
+                <td>S5</td>
+                <td id="z5"></td>        
+              </tr>
+          </table>  
+          <table id="mytable1" >
+            <tr>
+              <th>Solution</th>
+              <th>Volume of foam after 60min(ml)</th>
+            </tr>
+            <tr>
+              <td>S1</td>
+              <td id="i1"></td>
+            </tr>
+            <tr>
+              <td>S2</td>
+              <td id="i2"></td>
+            </tr>
+            <tr>
+              <td>S3</td>
+              <td id="i3"></td>
+            </tr>
+            <tr>
+              <td>S4</td>
+              <td id="i4"></td>        
+            </tr>
+            <tr>
+                <td>S5</td>
+                <td id="i5"></td>        
+              </tr>
+          </table>  
+
+          <table id="mytable3" >
+            <tr>
+              <th>Solution</th>
+              <th>V1(Initial volume in ml)</th>
+              <th>V2(Volume of foam in ml)</th>
+              <th>V2(Volume of foam after 60min(ml))</th>
+              <th>Foaming capacity</th>
+              <th>Foaming stability</th>
+            </tr>
+            <tr>
+              <td>S1</td>
+              <td>50</td>
+              <td>77</td>
+              <td>57</td>
+              <td id="j1"></td>
+              <td id="k1"></td>
+            </tr>
+            <tr>
+              <td>S2</td>
+              <td >50</td>
+              <td>104</td>
+              <td>12</td>
+              <td id="j2"></td>
+              <td id="k2"></td>
+            </tr>
+            <tr>
+              <td>S3</td>
+              <td >50</td>
+              <td>137</td>
+              <td>47</td>
+              <td id="j3"></td>
+              <td id="k3"></td>
+            </tr>
+            <tr>
+              <td>S4</td>
+              <td>50ml</td>  
+              <td>104</td>
+              <td>86</td>
+              <td id="j4"></td>   
+              <td id="k4"></td>   
+            </tr>
+            <tr>
+              <td>S5</td>
+              <td>50ml</td> 
+              <td>77</td>
+              <td>57</td>
+              <td id="j5"></td>  
+              <td id="k5"></td>     
+              </tr>
+          </table>  
+
+          <table id="usertable" >
+            <tr>
+                <th>Enter your calculated foaming capacity</th>
+                <th>Enter your calculated foaming stability</th>
+            </tr>
+            <tr>
+                <td><input type="number" id="first" name="value" required class="myinput" placeholder="S1"></td>
+                <td><input type="number" id="first1" name="value" required class="myinput" placeholder="S1"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="second" name="value" required class="myinput" placeholder="S2" ></td>
+                <td><input type="number" id="second2" name="value" required class="myinput" placeholder="S2" ></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="third" name="value" required class="myinput" placeholder="S3"></td>
+                <td><input type="number" id="third3" name="value" required class="myinput" placeholder="S3"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="fourth" name="value" required class="myinput"placeholder="S4"></td>
+                <td><input type="number" id="fourth4" name="value" required class="myinput"placeholder="S4"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="fifth" name="value" required class="myinput" placeholder="S5"></td>
+                <td><input type="number" id="fifth5" name="value" required class="myinput" placeholder="S5"></td>
+            </tr>
+          </table>
+          <button type="button"  id="submitresult">Check</button>
+
+           <div class="popup" id="myPopup">
+            <div class="popup-content">
+              <h2>What is the quantity of ethyl acetate taken?</h2>
+              <p>Select your answer:</p>
+              <div class="popup-choices">
+                <label><input type="radio" name="answer" value="Protein isolate"> Protein isolate</label>
+                <label><input type="radio" name="answer" value="Casein"> Casein</label>
+                <label><input type="radio" name="answer" value="Palm oil" checked> Palm oil</label>
+                <label><input type="radio" name="answer" value="Soy powder">Soy powder</label>
+              </div>
+              <button id="popbutton2" onclick="checkAnswer()">Submit Answer</button>
+            </div>
+            <span class="popup-close" onclick="closePopup()">&times;</span>
+          </div>
+          <img  id="backgray" src="images/backgroundgray.png" alt="backgray">
+          <button id="popbutton1" onclick="openPopup()">Please attempt this question!</button>
+          <h1 id="end">You have successfully finished the experiment!</h1>
+          <div id="hs1"></div>
+          <div id="hs2"></div>
+          <div id="hs3"></div>
+          <div id="hs4"></div>
+          <div id="hs5"></div>
+          <div id="hpowder"></div>
+          <div id="hspatula"></div>
+          <div id="hpetri"></div>
+          <div id="hwm"></div>
+          <div id="hcylinder"></div>
+          <h1 id="hovt"></h1>
+          <div id="langselector">       
+            <h1 id="lselector">Please select your preferred language!</h1>
+            <button id="hindi" onclick="hindi1()">HINDI</button>
+            <button id="eng" onclick="eng1()">ENGLISH</button>
+        </div> 
+        
+            
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="hover.js"></script>
+</body>
+
+</html>
