@@ -6,7 +6,7 @@ var hs5=document.querySelector("#hs5")
 var hcylinder=document.querySelector("#hcylinder")
 var hpowder=document.querySelector("#hpowder")
 var hwm=document.querySelector("#hwm")
-var hpetri=document.querySelector("#hpetri")
+var hmachine=document.querySelector("#hmachine")
 var hspatula=document.querySelector("#hspatula")
 var hovt = document.querySelector("#hovt")
 var hcounter=0
@@ -24,7 +24,7 @@ hs1.addEventListener("mouseenter",function(){
     hovt.style.visibility="visible"
     hovt.innerText="S1 beaker"
     hovt.style.top="42%"
-    hovt.style.left="47%"
+    hovt.style.left="45%"
 
 })
 hs1.addEventListener("mouseout",function(){
@@ -38,7 +38,7 @@ hs2.addEventListener("mouseenter",function(){
     hovt.style.visibility="visible"
     hovt.innerText="S2 beaker"
     hovt.style.top="42%"
-    hovt.style.left="55%"
+    hovt.style.left="53%"
 
 })
 hs2.addEventListener("mouseout",function(){
@@ -52,7 +52,7 @@ hs3.addEventListener("mouseenter",function(){
     hovt.style.visibility="visible"
     hovt.innerText="S3 beaker"
     hovt.style.top="42%"
-    hovt.style.left="65%"
+    hovt.style.left="58%"
 
 })
 hs3.addEventListener("mouseout",function(){
@@ -66,7 +66,7 @@ hs4.addEventListener("mouseenter",function(){
     hovt.style.visibility="visible"
     hovt.innerText="S4 beaker"
     hovt.style.top="42%"
-    hovt.style.left="73%"
+    hovt.style.left="68%"
 
 })
 hs4.addEventListener("mouseout",function(){
@@ -80,7 +80,7 @@ hs5.addEventListener("mouseenter",function(){
     hovt.style.visibility="visible"
     hovt.innerText="S5 beaker"
     hovt.style.top="42%"
-    hovt.style.left="80%"
+    hovt.style.left="75%"
 
 })
 hs5.addEventListener("mouseout",function(){
@@ -93,7 +93,7 @@ hpowder.addEventListener("mouseenter",function(){
     hovt.style.transitionDuration="0.5s"
     hovt.style.visibility="visible"
     hovt.innerText="Protein isolate"
-    hovt.style.top="53%"
+    hovt.style.top="43%"
     hovt.style.left="30%"
 
 })
@@ -102,19 +102,7 @@ hpowder.addEventListener("mouseout",function(){
     hovt.style.visibility="hidden"
 })
 
-hcylinder.addEventListener("mouseenter",function(){
-    hcounter+=1
-    hovt.style.transitionDuration="0.5s"
-    hovt.style.visibility="visible"
-    hovt.innerText="Cylinder"
-    hovt.style.top="45%"
-    hovt.style.left="36%"
 
-})
-hcylinder.addEventListener("mouseout",function(){
-    hovt.style.transitionDuration="0s"
-    hovt.style.visibility="hidden"
-})
 
 hspatula.addEventListener("mouseenter",function(){
     hcounter+=1
@@ -144,16 +132,31 @@ hwm.addEventListener("mouseout",function(){
     hovt.style.visibility="hidden"
 })
 
-hpetri.addEventListener("mouseenter",function(){
+hmachine.addEventListener("mouseenter",function(){
     hcounter+=1
     hovt.style.transitionDuration="0.5s"
     hovt.style.visibility="visible"
-    hovt.innerText="Petri dish"
-    hovt.style.top="65%"
+    hovt.innerText="Whipping machine"
+    hovt.style.top="25%"
+    hovt.style.left="45%"
+
+})
+hmachine.addEventListener("mouseout",function(){
+    hovt.style.transitionDuration="0s"
+    hovt.style.visibility="hidden"
+})
+
+hcylinder.addEventListener("mouseenter",function(){
+    hcounter+=1
+    hovt.style.transitionDuration="0.5s"
+    hovt.style.visibility="visible"
+    hovt.innerText="Measuring cylinder"
+    hovt.style.top="40%"
     hovt.style.left="10%"
 
 })
-hpetri.addEventListener("mouseout",function(){
+
+hcylinder.addEventListener("mouseout",function(){
     hovt.style.transitionDuration="0s"
     hovt.style.visibility="hidden"
 })
@@ -169,7 +172,13 @@ function steper(){
         counter=1
         update();
         hvalue="done"
-       
+        arrow.style.top="81%"
+        arrow.style.rotate="90deg"
+        arrow.style.left="86.5%"
+        arrow.style.visibility="visible";
+        setTimeout(()=>{
+        arrow.classList.add("blink");
+         },1000)
     }
 }
 }
