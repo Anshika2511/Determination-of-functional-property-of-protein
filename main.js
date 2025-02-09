@@ -1,117 +1,95 @@
 const messages = ["Make yourself familiar with the equipments by hovering over them.",
    "Press on the next button.",
-   "Press ON button on the weighing machine.",
-   "Place S1 beaker on the weighing machine.",
-   "Press tare button.",
-   "Open the cap of protein isolate bottle",
-   "Pick up spatula and measure 1g protein.",
-   "Click on the S1 beaker",
-   "Click on S2 beaker!",
-   "Press tare button.",
-   "Pick up spatula to measure 2g protein .",
-   "Click on the S2 beaker.",
-   "Click on the S3 beaker to put it on weighing machine.",
-   "Press tare button .",
-   "Click spatula to measure 3g protein.",
-   "Click on S3 beaker." ,
-   "Click on S4 beaker to put it on weighing machine.",
-   "Press tare button." ,
-   "Click spatula to measure 4g protein.",
-   "Click on S4 beaker.",
-   "Click on S5 beaker to put it on weighing machine.",
-   "Press tare button",
-   "Click on spatula to measure 5g protein!",
-   "Click on S5 beaker.",
+   "Pick up the pipette.",
+   "Measure 3ml of distilled water using pipette and release it into the TLC chamber.",
+   "Measure 3.5ml of ethanol using pipette and release it into the TLC chamber.",
+   "Measure 7ml of ethyl acetate using pipette and release it into the TLC chamber.",
+   "Ohhh! you filled way too much!. Release some of it!",
+   "Great! you measured the right amount!",
+   "Cover the beaker by a lid.",
+   "Press on the next button.",
+   "Hold the ruler and place it at 1cm from the bottom of the TLC plate.",
+   "Draw a horizontal line near the bottom end of a TLC plate.",
+   "Press the next button.",
+   "Put a drop of ink on the lower line.",
+   "Press on the next button." ,
+   "Open the beaker.",
+   "Put some amount of solvent in the TLC chamber." ,
+   "Press the pipette to take some solvent.",
+   "Close the beaker by a lid.",
+   "Close the TLC chamber too!.",
+   "Now, know some fact!",
+   "Click on the 'close the fact' button after knowing the fact!",
+   "Open the TLC chamber.",
+   "Hold the TLC plate. ",
+   "Move the TLC plate into the chamber using a forceps.",
+   "Close the TLC chamber",
+   "Wait for some time until some compounds are spotted on the plate",
+   "Open the TLC chamber",
+   "Take the TLC plate out of the chamber",
    "Press on the next button",
-   "Click on cylinder to pour 50ml water in S1 beaker",
-   "Click on cylinder to pour 50ml water in S2 beaker",
-   "Click on cylinder to pour 50ml water in S3 beaker",
-   "Click on cylinder to pour 50ml water in S4 beaker",
-   "Click on cylinder to pour 50ml water in S5 beaker",
+   "Click on the ruler",
+   "Click on the pencil to draw a line at the solvent front",
+   "Wait for the TLC plate to dry!",
    "Press on the next button",
-   "Click on the ON button on the whipping machine ",
-   "Click on S1 beaker to foam the protein.",
-   "Click on foamed S1 beaker after foaming",
-   "Click on S2 beaker to foam the protein",
-   "Click on foamed S2 beaker after foaming ",
-   "Click S3 beaker for foaming",
-   "Click on foamed S3 beaker after foaming",
-   "Click on S4 beaker to foam the protein!",
-   "Click on foamed S4 beaker after foaming",
-   "Click on S5 beaker to foam it",
-   "Click on foamed S5 beaker after foaming",
-   "Press OFF button on the whipping machine",
-   "Press on next button",
-   "Pour S1 foam in cylinder and measure volume",
-   "Pour S2 foam in cylinder and measure volume ",
-   "Pour S3 foam in cylinder and measure volume",
-   "Pour S4 foam in cylinder and measure volume",
-   "Pour S5 foam in cylinder and measure volume",
-   "Record the volumes again after few seconds( note:1hr in real)",
+   "Take the readings of the distance travelled by the solvent",
+   "Measure the distance travelled by the faint violet colour",
+   "Measure the distance travelled by the deep violet colour",
+   "Measure the distance travelled by the deep blue colour",
+   "Measure the distance travelled by the violet colour",
    "Press on the next button",
-   "Enter your calculated foaming capacity and stability and press check button",
-   "Press the next button"
+   "Enter the calculated Rf value in the table below and then press the check button",
+   "Check your values with the given data and further press the next button!"
 ];
 
 const messagesh=["उपकरणों के ऊपर माउस ले जाकर स्वयं को उनसे परिचित कराएं।",
-"वजन मशीन पर ऑन बटन दबाएँ।",
-   "वजन मशीन पर S1 बीकर रखें।",
-   "टायर बटन दबाएँ।",
-   "प्रोटीन आइसोलेट बोतल का ढक्कन खोलें",
-   "स्पैटुला उठाएँ और 1 ग्राम प्रोटीन मापें।",
-   "S1 बीकर पर क्लिक करें",
-   "S2 बीकर पर क्लिक करें!",
-   "टायर बटन दबाएँ।",
-   "2 ग्राम प्रोटीन मापने के लिए स्पैटुला उठाएँ।",
-   "S2 बीकर पर क्लिक करें।",
-   "वेइंग मशीन पर रखने के लिए S3 बीकर पर क्लिक करें।",
-   "टायर बटन दबाएँ।",
-   "3जी प्रोटीन मापने के लिए स्पैटुला पर क्लिक करें।",
-   "S3 बीकर पर क्लिक करें।" ,
-   "वेइंग मशीन पर रखने के लिए S4 बीकर पर क्लिक करें।",
-   "टायर बटन दबाएँ।" ,
-   "4 ग्राम प्रोटीन मापने के लिए स्पैटुला पर क्लिक करें।",
-   "S4 बीकर पर क्लिक करें।",
-   "वेइंग मशीन पर रखने के लिए S5 बीकर पर क्लिक करें।",
-   "टायर बटन दबाएँ",
-   "5 ग्राम प्रोटीन मापने के लिए स्पैटुला पर क्लिक करें!",
-   "S5 बीकर पर क्लिक करें।",
-   "अगला बटन दबाएँ",
-   "S1 बीकर में 50ml पानी डालने के लिए सिलेंडर पर क्लिक करें",
-   "S2 बीकर में 50ml पानी डालने के लिए सिलेंडर पर क्लिक करें",
-   "S3 बीकर में 50ml पानी डालने के लिए सिलेंडर पर क्लिक करें",
-   "S4 बीकर में 50ml पानी डालने के लिए सिलेंडर पर क्लिक करें",
-   "S5 बीकर में 50ml पानी डालने के लिए सिलेंडर पर क्लिक करें",
-   "अगला बटन दबाएँ",
-   "व्हिपिंग मशीन पर ऑन बटन पर क्लिक करें",
-   "प्रोटीन को फोम करने के लिए S1 बीकर पर क्लिक करें।",
-   "फोमिंग के बाद फोमयुक्त S1 बीकर पर क्लिक करें",
-   "प्रोटीन को फोम करने के लिए S2 बीकर पर क्लिक करें",
-   "फोम बनने के बाद फोमयुक्त S2 बीकर पर क्लिक करें",
-   "फोमिंग के लिए S3 बीकर पर क्लिक करें",
-   "फोमिंग के बाद फोमयुक्त S3 बीकर पर क्लिक करें",
-   "प्रोटीन को फोम करने के लिए S4 बीकर पर क्लिक करें!",
-   "फोमिंग के बाद फोमयुक्त S4 बीकर पर क्लिक करें",
-   "इसे फोम करने के लिए S5 बीकर पर क्लिक करें",
-   "फोमिंग के बाद फोमयुक्त S5 बीकर पर क्लिक करें",
-   "व्हिपिंग मशीन पर ऑफ बटन दबाएं",
-   "अगला बटन दबाएँ",
-   "सिलेंडर में S1 फोम डालें और आयतन मापें",
-   "सिलेंडर में S2 फोम डालें और आयतन मापें",
-   "सिलेंडर में S3 फोम डालें और आयतन मापें",
-   "सिलेंडर में S4 फोम डालें और आयतन मापें",
-   "सिलेंडर में S5 फोम डालें और आयतन मापें",
-   "कुछ सेकंड के बाद फिर से वॉल्यूम रिकॉर्ड करें (नोट: वास्तविक रूप से 1 घंटा)",
-   "अगला बटन दबाएँ",
-   "अपनी गणना की गई फोमिंग क्षमता और स्थिरता दर्ज करें और चेक बटन दबाएं",
-   "अगला बटन दबाएँ"
+   "नेक्स्ट बटन दबाएँ।",
+   " कृपया पिपेट उठाइये।",
+   "पिपेट का उपयोग करके 3 मिलीलीटर आसुत जल मापें और इसे टीएलसी कक्ष में डाल दें।",
+   "पिपेट का उपयोग करके 3.5 मिलीलीटर इथेनॉल मापें और इसे टीएलसी कक्ष में डाल दें।",
+   "पिपेट का उपयोग करके 7 मिलीलीटर एथिल एसीटेट मापें और इसे टीएलसी कक्ष में डाल दें।",
+   "ओहहो! आपने बहुत ज्यादा भर दिया! इसमें से कुछ मात्रा कम करें!",
+   "बहुत बढ़िया! आपने सही मात्रा मापी!",
+   "बीकर को ढक्कन से ढक दें।",
+   "नेक्स्ट बटन दबाएँ।",
+   "रूलर को पकड़ें और इसे टीएलसी प्लेट के नीचे से 1 सेमी की दूरी पर रखें।",
+   "टीएलसी प्लेट के नीचे एक रेखा चिह्नित करें।",
+   "नेक्स्ट बटन दबाएँ।",
+   "टीएलसी प्लेट पर लाइन के केंद्र में नीले बॉल-पॉइंट पेन का उपयोग करके एक स्याही बिंदु रखें।",
+   "नेक्स्ट बटन दबाएँ।" ,
+   "कृपया बीकर खोलें।",
+   "टीएलसी चैम्बर में कुछ मात्रा में विलायक डालें।" ,
+   "कुछ विलायक लेने के लिए पिपेट दबाएं।",
+   "बीकर को ढक्कन से बंद कर दें।",
+   "टीएलसी चैम्बर भी बंद करें!",
+   "अब, कुछ तथ्य जानिए!",
+   "तथ्य जानने के बाद 'क्लोज द  फैक्ट' बटन पर क्लिक करें!",
+   "टीएलसी चैम्बर खोलें।",
+   "टीएलसी प्लेट उठाइये।",
+   "एक संदंश का उपयोग करके टीएलसी प्लेट को चैम्बर में ले जाएँ।",
+   "टीएलसी चैम्बर बंद करें।",
+   "प्लेट पर कुछ यौगिक दिखाई देने तक कुछ समय तक प्रतीक्षा करें।",
+   "टीएलसी चैम्बर खोलें।",
+   "टीएलसी प्लेट को चैम्बर से बाहर निकालें।",
+   "नेक्स्ट बटन दबाएँ।",
+   "रूलर पर क्लिक करें",
+   "विलायक के मोर्चे पर एक रेखा खींचने के लिए पेंसिल पर क्लिक करें",
+   "टीएलसी प्लेट के सूखने की प्रतीक्षा करें!",
+   "विलायक द्वारा तय की गई दूरी की रीडिंग लें।",
+   "हल्के बैंगनी रंग द्वारा तय की गई दूरी मापें।",
+   "गहरे बैंगनी रंग द्वारा तय की गई दूरी मापें।",
+   "गहरे नीले रंग द्वारा तय की गई दूरी मापें।",
+   "बैंगनी रंग द्वारा तय की गई दूरी मापें।",
+   "नेक्स्ट बटन दबाएँ।",
+   "नीचे दी गई तालिका में परिकलित आरएफ मान दर्ज करें और फिर चेक बटन दबाएं।",
+   "दिए गए डेटा के साथ अपने मूल्यों की जांच करें और नेक्स्ट बटन दबाएं!"
 ];
 
 var hindibtn = document.querySelector("#hindi")
 var engbtn = document.querySelector("#eng")
 var langselector = document.querySelector("#langselector")
 var mes1  
-  
+
 var counter=0
 
 var lang
@@ -142,7 +120,7 @@ function speech1(){
     }
     setTimeout(function(){ 
         const utterance = new SpeechSynthesisUtterance(mes1);
-        utterance.lang = 'en-EN';
+        utterance.lang = 'hi-IN';
         utterance.pitch=1;
         utterance.rate=1;
         utterance.volume=1;
@@ -164,1065 +142,1276 @@ function speech1(){
       counter+=1
       speech1()
   }
-   
-  var sgm=document.querySelector("#sgm")
-  var gm=document.querySelector("#gm")
-  var i1=document.querySelector("#i1")
-  var i2=document.querySelector("#i2")
-  var i3=document.querySelector("#i3")
-  var i4=document.querySelector("#i4")
-  var i5=document.querySelector("#i5")
-  var FC=document.querySelector("#FC")
-  var FS=document.querySelector("#FS")
- var end=document.querySelector("#end")
-  var pipe=document.querySelector("#pipe")
-  var d=document.querySelector("#stir")
-  var onb=document.querySelector("#onb")
-  var offb=document.querySelector("#offb")
-  var tareb =document.querySelector("#tareb")
-  var wm=document.querySelector("#wm")
-  var cylin = document.querySelector("#cylin")
-  var cylinsol = document.querySelector("#cylinsol")
-//   var p=document.querySelector("#petri")
+
+var uld=0
+var myinput=document.querySelector(".myinput")
+var a=document.querySelector("#pencil1")
+var b=document.querySelector("#introslide")
+var h=document.querySelector("#readymade7ml")
+var j=document.querySelector("#readymade3ml")
+var k=document.querySelector("#readymade35ml")
+var l=document.querySelector("#pencil")
+var m=document.querySelector("#ruler")
+var n=document.querySelector("#slide")
+var line=document.querySelector("#line")
+var line1=document.querySelector("#line1")
+
+var over7ml=document.querySelector("#over7ml")
+ var g=document.querySelector("#pipette7ml")
+ var e=document.querySelector("#pipette35ml")
+  var c=document.querySelector("#pipette3ml")
+ var d=document.querySelector("#pipette")
+ var i=document.querySelector("#cap")
+ var n1=document.querySelector("#nxt")
+
+ var linedot=document.querySelector("#linedot")
+ var lineslide=document.querySelector("#lineslide")
+ var ink=document.querySelector("#ink")
+ var inkfront=document.querySelector("#inkfront")
+ var pen=document.querySelector("#pen")
+ var hd1=document.querySelector("#hd1")
+ var hd2=document.querySelector("#hd2")
+ var ss=document.querySelector("#ss")
+ var forceps1=document.querySelector("#forceps1")
+ var z=document.querySelector("#forcepsmov")
+ var wetslide=document.querySelector("#wetslide")
+ var dryslide=document.querySelector("#dryslide")
+
+ var table=document.querySelector("#toptable")
+ var tiles=document.querySelector("#tiles")
+ var TCback=document.querySelector("#TCback")
+ var TCfront=document.querySelector("#TCfront")
+ var TCback1=document.querySelector("#TCback1")
+ var TCfront1=document.querySelector("#TCfront1")
+
+ var b1back=document.querySelector("#b1back")
+ var b1middle=document.querySelector("#b1middle")
+ var b1front=document.querySelector("#b1front")
+ var b2back=document.querySelector("#b2back")
+ var b2middle=document.querySelector("#b2middle")
+ var b2front=document.querySelector("#b2front")
+ var b3back=document.querySelector("#b3back")
+ var b3middle=document.querySelector("#b3middle")
+ var b3front=document.querySelector("#b3front")
+
+ const utable = document.getElementById('usertable');
+  const submitButton = document.getElementById('submitresult');
+  const first=document.getElementById('first')
+  const second=document.getElementById('second')
+  const third=document.getElementById('third')
+  const fourth=document.getElementById('fourth')
 
 
-  function nxt(){
-    if(f==0){                                  //yahan hover step hide hoga //
-       
+ function nxt(){
+  if(f==0){
+    arrow.style.visibility="hidden"             
+    arrow.classList.remove("blink");
 
-    hs1.style.visibility="hidden"
-    hs2.style.visibility="hidden"      
-    hs3.style.visibility="hidden"
-    hs4.style.visibility="hidden"
-    hs5.style.visibility="hidden"
-    hwm.style.visibility="hidden"
-    hmachine.style.visibility="hidden"
-    hspatula.style.visibility="hidden"
-    hpowder.style.visibility="hidden"
-    hcylinder.style.visibility="hidden"
-    cylin.style.visibility="hidden"
-    introwhip.style.visibility="hidden"
-    ye1.style.visibility="hidden"
-    yyy.style.visibility="hidden"
-    // b1.style.visibility="hidden"
-    // b2.style.visibility="hidden"
-    // b3.style.visibility="hidden"
-    // b4.style.visibility="hidden"
-    // b5.style.visibility="hidden"
-    emp1.style.visibility="visible"
-    emp2.style.visibility="visible"
-    emp3.style.visibility="visible"
-    emp4.style.visibility="visible"
-    emp5.style.visibility="visible"
-    bottle.style.visibility="visible"
-    cylinsol.style.visibility="hidden"
-    // water1.style.visibility="hidden"
+    a.style.visibility="hidden";
+    b.style.visibility="hidden";
+    penintro.style.visibility="hidden";
+    forceps1.style.visibility="hidden";
+    TCback.style.visibility="hidden"
+    TCfront.style.visibility="hidden"
+    beaker0back.style.visibility="visible";
+    beaker0front.style.visibility="visible";
+    hpencil.style.visibility="hidden"
+    hintroslide.style.visibility="hidden"
+    hforceps1.style.visibility="hidden"
+    hpenintro.style.visibility="hidden"
+    hpipette.style.visibility="hidden"
+    hTCfront.style.visibility="hidden"
+    hb1front.style.visibility="hidden"
+    hb2front.style.visibility="hidden"
+    hb3front.style.visibility="hidden"
+    hcap.style.visibility="hidden"
+    f=1
+    update();
+    arrow.style.left="24.8%"
+    arrow.style.top="69.7%"
+    arrow.style.rotate="0deg"
+    arrow.style.visibility="visible";
+    setTimeout(() => {
+      arrow.classList.add("blink")
+    },1000);
+ }
+
+ else if(f==6){
+  arrow.style.visibility="hidden";                
+  arrow.classList.remove("blink"); 
+
+    d.style.transitionDuration="0s";
+    d.style.visibility="hidden";
+
+    i.style.transitionDuration="0s";
+    i.style.visibility="hidden";
+
+    beaker0back.style.visibility="hidden";
+    beaker0front.style.visibility="hidden";
+    bottombeakerliquid.style.transitionDuration="0s"
+    bottombeakerliquid.style.visibility="hidden";
+    middlebeakerliquid.style.transitionDuration="0s"
+    middlebeakerliquid.style.visibility="hidden"
+    topbeakerliquid.style.transitionDuration="0s"
+    topbeakerliquid.style.visibility="hidden";
+
+    b1back.style.visibility="hidden"
+    b1middle.style.visibility="hidden"
+    b1front.style.visibility="hidden"
+    b2back.style.visibility="hidden";
+    b2middle.style.visibility="hidden"
+    b2front.style.visibility="hidden"
+    b3back.style.visibility="hidden"
+    b3middle.style.visibility="hidden"
+    b3front.style.visibility="hidden"
+    p1.style.transitionDuration="0s";
+    p1.style.visibility="hidden"
+
+    tiles.style.visibility="visible";
+    table.style.visibility="visible";
+    l.style.visibility="visible";
+    m.style.visibility="visible"
+    n.style.visibility="visible"
+    m1.style.visibility="visible";
+    f=7
+    update();
+    arrow.style.visibility="visible" 
+    arrow.style.top="46%"                                  //open beaker 0
+    arrow.style.left="60%"
+    setTimeout(()=>{
+      arrow.classList.add("blink");
+    },500)
+  }
+ 
+  else if(f==9){       
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink");
     
-     cylin.style.visibility="hidden"
+    l.style.transitionDuration="0s"
+    l.style.visibility="hidden"
+    m.style.transitionDuration="0s"
+    m.style.visibility="hidden"
+  //  m.style.left="30%"                        new changed position of ruler
+  //  m.style.height="64%"
+  //  m.style.top="22%"
+    n.style.transitionDuration="0s"
+    n.style.visibility="hidden"
+    line.style.transitionDuration="0s"
+    line.style.visibility="hidden"
+    line1.style.transitionDuration="0s";
+    line1.style.visibility="hidden"
+    m1.style.visibility="hidden"
+    table.style.visibility="hidden";
+    tiles.style.visibility="hidden"
+
+    topbeakerliquid.style.transitionDuration="0s";
+    topbeakerliquid.style.visibility="hidden"
+    lineslide.style.visibility="visible"
+    pen.style.visibility="visible";
+
+    setTimeout(function(){
+    arrow.style.visibility="visible" 
+    arrow.style.left="31%"
+    arrow.style.top="60.5%"
+    setTimeout(() => {
+      arrow.classList.add("blink");
+    },1000);
+    },1000)
+
+    f=10
+    update();
+  }
+  else if(f==11){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+
+    lineslide.style.transitionDuration="0s"
+    lineslide.style.visibility="hidden"
+    pen.style.transitionDuration="0s"
+    pen.style.visibility="hidden";
+    linedot.style.transitionDelay="0s"
+    linedot.style.transitionDuration="0s"
+    linedot.style.visibility="hidden";
+
+    TCback1.style.visibility="visible";
+    TCfront1.style.visibility="visible";
+     beaker0back.style.visibility="visible"
+     beaker0back.style.left="40%"
+     beaker0middle.style.visibility="visible"
+     beaker0front.style.visibility="visible"  
+     beaker0front.style.left="36.72%"
+
+     captlc.style.visibility="visible"
+     pipettebeak.style.visibility="visible"
+     
+     i.style.visibility="visible";
+     i.style.top="59.5%";
+     i.style.left="28.3%";
+     setTimeout(function(){
+      arrow.style.visibility="visible" 
+      arrow.style.left="35.5%"
+      arrow.style.top="49%"
+      arrow.classList.add("blink");
+      },1000)
+     f=12;
      update();
-    }
-
-     if(f==22){
-        ye1.style.visibility="hidden"
-        yyy.style.visibility="hidden"
-       wm.style.visibility ="hidden"
-       offb.style.visibility ="hidden"
-       tareb.style.visibility ="hidden"
-       onb.style.visibility ="hidden"
-       number.style.visibility ="hidden"
-       bottle.style.transitionDuration="0s"
-       bottle.style.visibility ="hidden"
-       cap.style.visibility="hidden"
-       cap.style.transitionDuration="0s"
-       sgm.style.visibility ="hidden"
-       spatula.style.visibility ="hidden"
-       spatula.style.transitionDuration="0s"
-       spatula2.style.visibility ="hidden"
-       spatula2.style.transitionDuration="0s"
-       cylinsol.style.visibility="visible";
-       cylinder.style.visibility="visible";
-       update();
-    }
-
-       if(f==28){/*dtep3*/
-      b1.style.visibility="visible"
-      b2.style.visibility="visible"
-      b3.style.visibility="visible"
-      b4.style.visibility="visible"
-      b5.style.visibility="visible"
-      cylinsol.style.visibility="hidden";
-      cylinsol.style.transitionDuration="0s"
-      cylinder.style.visibility="hidden";
-      cylinder.style.transitionDuration="0s"
-      whipmachine.style.visibility="visible";
-      pipe.style.visibility="visible";
-      ye1.style.visibility="visible"
-      yyy.style.visibility="hidden"
-      update();
-     }
-
-     if(f==41){/*dtep4*/
-    whipmachine.style.visibility="hidden";
-    whipmachine.style.transitionDuration="0s"
-    pipe.style.visibility="hidden";
-    pipe.style.transitionDuration="0s"
-    ye1.style.visibility="hidden"
-    yyy.style.visibility="hidden"
-    cylin1.style.visibility="visible"
-    cylin2.style.visibility="visible"
-    cylin3.style.visibility="visible"
-    cylin4.style.visibility="visible"
-    cylin5.style.visibility="visible"
-    t1.style.visibility="visible"
-    t2.style.visibility="visible"
-    t3.style.visibility="visible"
-    t4.style.visibility="visible"
-    t5.style.visibility="visible"
-    mytable.style.visibility="visible";
-
-    update();
-    }
-    if(f==46){
-        mytable.style.visibility="hidden"
-        c1.style.visibility="hidden"
-        c2.style.visibility="hidden"
-        c3.style.visibility="hidden"
-        c4.style.visibility="hidden"
-        c5.style.visibility="hidden"
-        cylin1.style.visibility="hidden"
-        cylin2.style.visibility="hidden"
-        cylin3.style.visibility="hidden"
-        cylin4.style.visibility="hidden"
-        cylin5.style.visibility="hidden"
-       
-        mytable1.style.visibility="hidden"
-        toptable.style.visibility="visible"
-        mytable3.style.visibility="visible"
-        usertable.style.visibility="visible"
-        submitresult.style.visibility="visible"
-        FC.style.visibility="visible"
-        FS.style.visibility="visible"         //line no. 1078 pr f==44 ho rha 
-        update();
-        f=47
-    }
-    if(f==48){
-        backgray.style.visibility="visible"
-        end.style.visibility="visible"  
-    }
-    }
-
-
-
-
-/*************************Step 1  :taulne vaala ****************** */
-var sgm = document.querySelector("#sgm")
-var gm = document.querySelector("#gm")
-var i1 = document.querySelector("#i1")
-var i2 = document.querySelector("#i2")
-var i3 = document.querySelector("#i3")
-var i4 = document.querySelector("#i4")
-var i5 = document.querySelector("#i5")
-var FC = document.querySelector("#FC")
-var FS = document.querySelector("#FS")
-var end = document.querySelector("#end")
-var pipe = document.querySelector("#pipe")
-var d = document.querySelector("#stir")
-var onb = document.querySelector("#onb")
-var offb = document.querySelector("#offb")
-var tareb = document.querySelector("#tareb")
-var wm = document.querySelector("#wm")
-var p = document.querySelector("#petri")
-var s1b = document.querySelector("#emp1")
-var s2b = document.querySelector("#emp2")
-var s3b = document.querySelector("#emp3")
-var s4b = document.querySelector("#emp4")
-var s5b = document.querySelector("#emp5")
-var capon = document.querySelector("#cap")
-var spt = document.querySelector("#spatula")
-var spt2 = document.querySelector("#spatula2")
-var po1 = document.querySelector("#p1")
-var po2 = document.querySelector("#p2")
-var po3 = document.querySelector("#p3")
-var po4 = document.querySelector("#p4")
-var po5 = document.querySelector("#p5")
-/*step2nd*/
-var cylinup = document.querySelector("#cylinder")
-var cysolup = document.querySelector("#cylinsol")
-var drp0 = document.querySelector("#drop0")
-var drp1 = document.querySelector("#drop1")
-var drp2 = document.querySelector("#drop2")
-var drp3 = document.querySelector("#drop3")
-var drp4 = document.querySelector("#drop4")
-var b1 = document.querySelector("#b1")
-var b2 = document.querySelector("#b2")
-var b3 = document.querySelector("#b3")
-var b4 = document.querySelector("#b4")
-var b5 = document.querySelector("#b5")
-
-
-var f = 0;
-
-function on() {
-    console.log('f')
-    if (f == 0) {
-        number.style.visibility = "visible";
-        // f=2;
-        // update();
-    }
-    f += 1;
-    update();
-}
-function s1() {
-    console.log('f')
-    if (f == 1) {
-        s1b.style.transform = "translate(-270%,-60%)"
-
-        setTimeout(function () {
-            number.innerHTML = "20gm";
-
-        }, 2000)
-    }
-    update();
-    f += 1;
-}
-
-function tare() {       //tare krega machine ko
-    if (f == 2) {
-        number.innerHTML = "0gm";
-        f = 3;
-        update();
-
-    }
-    else if (f == 7) {
-        number.innerHTML = "0gm";
-        f = 8;
-        update();
-
-    }
-    else if (f == 11) {
-        number.innerHTML = "0gm";
-        f = 12;
-        update();
-
-    }
-    else if (f == 15) {
-        number.innerHTML = "0gm";
-        f = 16;
-        update();
-
-    }
-    else if (f == 19) {
-        number.innerHTML = "0gm";
-        f = 20;      //go to line 477
-        update();
-    }
-}
-function capopen() {
-    console.log('f')
-    if (f == 3) {
-
-        capon.style.transform = "translate(0%,-300%)"
-
-        
-        setTimeout(function () {
-            capon.style.transform = "translate( 0%,800%)"
-
-        }, 2000)
-    }
-    f += 1;
-    update();
-}
-
-function pick() {
-    console.log('f')
-    if (f == 4) {           //chammach utaenge//
-        spt.style.transform = "translate(18%,-280%)rotate(-30deg)"
-
-        setTimeout(function () {
-            spatula.style.visibility = "hidden"
-            sgm.style.visibility = "visible"      //bhari hui chammach dekhegi//
-        }, 1000)
-        setTimeout(function () {
-
-            sgm.style.transform = "translate(-60%,-250%)rotate(-10deg)"
-
-        }, 3000)
-
-        setTimeout(function () {
-
-            spt2.style.visibility = "visible";
-            s1b.style.visibility = "hidden";
-            po1.style.visibility = "visible";
-            number.innerHTML = "1gm";
-            sgm.style.visibility = "hidden";
-
-
-        }, 4000)
-        setTimeout(function () {
-            spt2.style.visibility = "hidden";
-            sgm.style.transform = "translate(0%,0%)rotate(0deg)"
-
-        }, 5000)
-        setTimeout(function () {
-
-            spatula.style.visibility = "visible";
-            spatula.style.transform = "translate(0%,0%)"
-            update();
-            f = 5;
-        }, 6000)
-    }
-    else if (f == 8) {
-        spt.style.transform = "translate(18%,-280%)rotate(-30deg)"
-
-        setTimeout(function () {
-            spt.style.visibility = "hidden"
-            sgm.style.visibility = "visible"      //bhari hui chammach dekhegi//
-        }, 1000)
-        setTimeout(function () {
-
-            sgm.style.transform = "translate(-60%,-250%)rotate(-10deg)"
-
-        }, 3000)
-
-        setTimeout(function () {
-
-            spt2.style.visibility = "visible";
-            s2b.style.visibility = "hidden";
-            po2.style.visibility = "visible";
-            number.innerHTML = "2gm";
-            sgm.style.visibility = "hidden";
-
-
-        }, 4000)
-        setTimeout(function () {
-            spt2.style.visibility = "hidden";
-            sgm.style.transform = "translate(0%,0%)rotate(0deg)"
-
-
-        }, 5000)
-        setTimeout(function () {
-
-            spatula.style.visibility = "visible";
-            spatula.style.transform = "translate(0%,0%)"
-            s2b.style.visibility = "hidden";
-            update();
-            f = 9;
-        }, 6000)
-    }
-    else if (f == 12) {
-        spt.style.transform = "translate(18%,-280%)rotate(-30deg)"
-
-        setTimeout(function () {
-            spt.style.visibility = "hidden"
-            sgm.style.visibility = "visible"      //bhari hui chammach dekhegi//
-        }, 1000)
-        setTimeout(function () {
-
-            sgm.style.transform = "translate(-60%,-250%)rotate(-10deg)"
-
-        }, 3000)
-
-        setTimeout(function () {
-
-            spt2.style.visibility = "visible";
-            s3b.style.visibility = "hidden";
-            po3.style.visibility = "visible";
-            number.innerHTML = "3gm";
-            sgm.style.visibility = "hidden";
-
-
-        }, 4000)
-        setTimeout(function () {
-            spt2.style.visibility = "hidden";
-            sgm.style.transform = "translate(0%,0%)rotate(0deg)"
-
-        }, 5000)
-        setTimeout(function () {
-
-            spatula.style.visibility = "visible";
-            spatula.style.transform = "translate(0%,0%)"
-            s3b.style.visibility = "hidden";
-            update();
-            f = 13;
-        }, 6000)
-    }
-    else if (f == 16) {
-        spt.style.transform = "translate(18%,-280%)rotate(-30deg)"
-
-        setTimeout(function () {
-            spt.style.visibility = "hidden"
-            sgm.style.visibility = "visible"      //bhari hui chammach dekhegi//
-        }, 1000)
-        setTimeout(function () {
-
-            sgm.style.transform = "translate(-60%,-250%)rotate(-10deg)"
-
-        }, 3000)
-
-        setTimeout(function () {
-
-            spt2.style.visibility = "visible";
-            s4b.style.visibility = "hidden";
-            po4.style.visibility = "visible";
-            number.innerHTML = "4gm";
-            sgm.style.visibility = "hidden";
-
-
-        }, 4000)
-        setTimeout(function () {
-            spt2.style.visibility = "hidden";
-            sgm.style.transform = "translate(0%,0%)rotate(0deg)"
-
-        }, 5000)
-        setTimeout(function () {
-
-            spatula.style.visibility = "visible";
-            spatula.style.transform = "translate(0%,0%)"
-            s4b.style.visibility = "hidden";
-            update();
-            f = 17;
-        }, 6000)
-    }
-    else if (f == 20) {
-        spt.style.transform = "translate(18%,-280%)rotate(-30deg)"
-
-        setTimeout(function () {
-            spt.style.visibility = "hidden"
-            sgm.style.visibility = "visible"      //bhari hui chammach dekhegi//
-        }, 1000)
-        setTimeout(function () {
-
-            sgm.style.transform = "translate(-60%,-250%)rotate(-10deg)"
-
-        }, 3000)
-
-        setTimeout(function () {
-
-            spt2.style.visibility = "visible";
-            s5b.style.visibility = "hidden";
-            po5.style.visibility = "visible";
-            number.innerHTML = "5gm";
-            sgm.style.visibility = "hidden";
-
-
-        }, 4000)
-        setTimeout(function () {
-            spt2.style.visibility = "hidden";
-            sgm.style.transform = "translate(0%,0%)rotate(0deg)"
-
-        }, 5000)
-        setTimeout(function () {
-
-            spatula.style.visibility = "visible";
-            spatula.style.transform = "translate(0%,0%)"
-            s5b.style.visibility = "hidden";
-            update();
-            f = 21;
-        }, 6000)
-    }
-}
-
-
-
-function p1() {
-    console.log(f)
-    if (f == 5) {
-        po1.style.transform = "translate(250%,60%)";
-    }
-    f += 1;
-    update();
-}
-function s2() {
-    console.log(f)
-    if (f == 6) {
-        s2b.style.transform = "translate(-370%,-60%)"
-
-        setTimeout(function () {
-            number.innerHTML = "20gm";
-
-        }, 2000)
-    }
-    update();
-    f += 1;
-}
-function p2() {
-    console.log('f')
-    if (f == 9) {
-
-        po2.style.transform = "translate(350%,60%)"
-    }
-    f += 1;
-    update();
-}
-function s3() {
-    console.log('f')
-    if (f == 10) {
-        s3b.style.transform = "translate(-470%,-60%)"
-
-        setTimeout(function () {
-            number.innerHTML = "20gm";
-
-        }, 2000)
-    }
-    update();
-    f += 1;
-}
-function p3() {
-    console.log('f')
-    if (f == 13) {
-
-        po3.style.transform = "translate(450%,60%)"
-
-
-    }
-    update();
-    f += 1;
-}
-function s4() {
-    console.log('f')
-    if (f == 14) {
-        s4b.style.transform = "translate(-570%,-60%)"
-
-        setTimeout(function () {
-            number.innerHTML = "20gm";
-
-        }, 2000)
-    }
-    update();
-    f += 1;
-}
-function p4() {
-    console.log('f')
-    if (f == 17) {
-
-        po4.style.transform = "translate(550%,60%)"
-    }
-    f += 1;
-    update();
-}
-function s5() {
-    console.log('f')
-    if (f == 18) {
-        s5b.style.transform = "translate(-670%,-60%)"
-
-        setTimeout(function () {
-            number.innerHTML = "20gm";
-        }, 2000)
-    }
-    update();
-    f += 1;
-}
-function p5() {
-    console.log('f')
-    if (f == 21) {
-
-        po5.style.transform = "translate(650%,60%)"
-    }
-    f =22;
-    update();
-}
-/***************************************************step2nd********************************/
-
-
-
-
-
-
-function cypour() {
-    if ( f== 22) {
-        cylinup.style.transform = "translate(80%,-60%) rotate(60deg)"
-        cysolup.style.transform = "translate(80%,-170%) rotate(60deg)"
-
-        setTimeout(function () {
-
-            cysolup.style.visibility = "hidden";
-        }, 1000)
-
-        setTimeout(function () {
-            drp0.style.visibility = "visible";
-
-            b1.style.visibility = "visible";
-            po1.style.visibility = "hidden";
-
-
-        }, 3000)
-
-
-        setTimeout(function () {
-
-            cylinup.style.transform = "translate(0%,-0%)rotate(0deg)"
-            cysolup.style.transform = "translate(0%,-0%)rotate(0deg)"
-            drp0.style.visibility = "hidden";
-        }, 4000)
-        setTimeout(function () {
-            cysolup.style.visibility = "visible";
-            
-        }, 5000)
-       f=24;
-       update();
-    }
-    else if (f == 24) {
-
-        cylinup.style.transform = "translate(200%,-60%) rotate(80deg)"
-        cysolup.style.transform = "translate(300%,-180%) rotate(80deg)"
-
-        setTimeout(function () {
-
-            cysolup.style.visibility = "hidden";
-        }, 1000)
-
-        setTimeout(function () {
-            drp1.style.visibility = "visible";
-            b2.style.visibility = "visible";
-            po2.style.visibility = "hidden";
-
-
-        }, 3000)
-
-        setTimeout(function () {
-            cylinup.style.transform = "translate(0%,-0%)rotate(0deg)"
-            cysolup.style.transform = "translate(0%,-0%)rotate(0deg)"
-            drp1.style.visibility = "hidden";
-        }, 4000)
-        setTimeout(function () {
-            cysolup.style.visibility = "visible";
-            
-        }, 5000)
-        f=25;
-        update();
-    }
-    else if (f == 25) {
-
-        cylinup.style.transform = "translate(400%,-60%) rotate(80deg)"
-        cysolup.style.transform = "translate(680%,-185%) rotate(80deg)"
-
-        setTimeout(function () {
-
-            cysolup.style.visibility = "hidden";
-        }, 1000)
-
-        setTimeout(function () {
-            drp2.style.visibility = "visible";
-            b3.style.visibility = "visible";
-            po3.style.visibility = "hidden";
-
-
-        }, 3000)
-
-        setTimeout(function () {
-            cylinup.style.transform = "translate(0%,-0%)rotate(0deg)"
-            cysolup.style.transform = "translate(0%,-0%)rotate(0deg)"
-            drp2.style.visibility = "hidden";
-        }, 4000)
-        setTimeout(function () {
-            cysolup.style.visibility = "visible";
-            
-        }, 5000)
-        f=26;
-        update();
-    }
-    else if (f == 26) {
-
-        cylinup.style.transform = "translate(550%,-60%) rotate(80deg)"
-        cysolup.style.transform = "translate(980%,-183%) rotate(80deg)"
-
-        setTimeout(function () {
-
-            cysolup.style.visibility = "hidden";
-        }, 1000)
-
-        setTimeout(function () {
-            drp3.style.visibility = "visible";
-            b4.style.visibility = "visible";
-            po4.style.visibility = "hidden";
-
-
-        }, 3000)
-
-        setTimeout(function () {
-            cylinup.style.transform = "translate(0%,-0%)rotate(0deg)"
-            cysolup.style.transform = "translate(0%,-0%)rotate(0deg)"
-            drp3.style.visibility = "hidden";
-        }, 4000)
-        setTimeout(function () {
-            cysolup.style.visibility = "visible";
-            
-        }, 5000)
-        f=27;
-        update();
-    }
-    else if (f == 27) {
-
-        cylinup.style.transform = "translate(680%,-60%) rotate(80deg)"
-        cysolup.style.transform = "translate(1220%,-183%) rotate(80deg)"
-
-        setTimeout(function () {
-
-            cysolup.style.visibility = "hidden";
-        }, 1000)
-
-        setTimeout(function () {
-            drp4.style.visibility = "visible";
-            b5.style.visibility = "visible";
-            po5.style.visibility = "hidden";
-
-
-        }, 3000)
-
-        setTimeout(function () {
-            cylinup.style.transform = "translate(0%,-0%)rotate(0deg)"
-            cysolup.style.transform = "translate(0%,-0%)rotate(0deg)"
-            drp4.style.visibility = "hidden";
-        }, 4000)
-        setTimeout(function () {
-            cysolup.style.visibility = "visible";
-            
-        }, 5000)
-        f=28;
-        update();
-    }
-
- 
-
-}
-
-/**************************************Step 3 whipping krna (foam bnana)**************************************/
-
-
-
-function y1(){
-    if(f==28){
-        ye1.style.backgroundColor="Red"
-        setTimeout(function(){
-            ye1.style.visibility="hidden";
-           },1000)
-        f=29;
-        update();
-        
-    }
-}
-
-function move1(){
-    if(f==29){
-        console.log('f')
-        
-        b1.style.transform="translate(-116%,0%)"
-        setTimeout(function(){
-         pipe.style.transform="translate(0%,26%)"
-        },1000)
-           setTimeout(function(){
-           ye1.style.top="35%"
-           yyy.style.top="32%"
-            pipe.style.transform="translate(0%,30%) rotate(-2.5deg)"
-           },1500)
-           setTimeout(function(){
-            pipe.style.transform="translate(0%,30%) rotate(2.5deg)"
-           },2000)
-        setTimeout(function(){
-           b1.style.visibility="hidden"
-           b1foam.style.visibility="visible"
-        },3000)
-        setTimeout(function(){
-            ye1.style.top="28%"
-            yyy.style.top="25%"
-            pipe.style.transform="translate(0%,0%) rotate(0deg)"
-           },4000)
-        f=30
-        update();
-    }}
-    function back1(){
-        if(f==30){
-            b1foam.style.transform="translate(115%,0%)"
-            f=31
-            update();
-        }
-    }
-  
-
-  function move2(){
-    if(f==31){
-        b2.style.transform="translate(-228%,0%)"
-        setTimeout(function(){
-            ye1.style.top="35%"
-           yyy.style.top="32%"
-            pipe.style.transform="translate(0%,20%) rotate(-3deg)"
-           },1500)
-           setTimeout(function(){
-            pipe.style.transform="translate(0%,20%) rotate(3deg)"
-           },2000)
-        setTimeout(function(){
-            b2.style.visibility="hidden"
-            b2foam.style.visibility="visible"
-        },3000)
-        setTimeout(function(){
-            ye1.style.top="28%"
-            yyy.style.top="25%"
-            pipe.style.transform="translate(0%,0%) rotate(0deg)"
-           },4000)
-        f=32
-        update();
-    }}
-
-    function back2(){
-        if(f==32){
-            b2foam.style.transform="translate(220%,0%)"
-            f=33
-            update();
-        }
-    }  
-  
-  function move3(){
-    if(f==33){
-        b3.style.transform="translate(-316%,0%)"
-        setTimeout(function(){
-            ye1.style.top="35%"
-            yyy.style.top="32%"
-            pipe.style.transform="translate(0%,30%) rotate(-3deg)"
-           },1500)
-           setTimeout(function(){
-            pipe.style.transform="translate(0%,30%) rotate(3deg)"
-           },2000)
-        setTimeout(function(){
-            b3.style.visibility="hidden"
-            b3foam.style.visibility="visible"
-        },3000)
-        setTimeout(function(){
-            ye1.style.top="28%"
-            yyy.style.top="25%"
-            pipe.style.transform="translate(0%,0%) rotate(0deg)"
-           },4000)
-        f=34
-        update();
-    }
-}
-    function back3(){
-        if(f==34){
-            b3foam.style.transform="translate(292%,0%)"
-            f=35
-            update();
-        }
-    }
-    
-    
-  function move4(){
-    if(f==35){
-        b4.style.transform="translate(-429%,0%)"
-        setTimeout(function(){
-            ye1.style.top="35%"
-            yyy.style.top="32%"
-            pipe.style.transform="translate(0%,30%) rotate(-3deg)"
-           },1500)
-           setTimeout(function(){
-            pipe.style.transform="translate(0%,30%) rotate(3deg)"
-           },2000)
-        setTimeout(function(){
-            b4.style.visibility="hidden"
-            b4foam.style.visibility="visible"
-        },3000)
-        setTimeout(function(){
-            ye1.style.top="28%"
-            yyy.style.top="25%"
-            pipe.style.transform="translate(0%,0%) rotate(0deg)"
-           },4000)
-        f=36
-        update();
-    }
-}
-function back4(){
-    if(f==36){
-        b4foam.style.transform="translate(427%,0%)"
-        f=37
-        update();
-   }
-}
+  }
    
-  
-  function move5(){
-    if(f==37){
-        b5.style.transform="translate(-533%,0%)"
-        setTimeout(function(){
-            ye1.style.top="35%"
-            yyy.style.top="32%"
-            pipe.style.transform="translate(0%,30%) rotate(-3deg)"
-           },1500)
-           setTimeout(function(){
-            pipe.style.transform="translate(0%,30%) rotate(3deg)"
-           },2000)
-        setTimeout(function(){
-            b5.style.visibility="hidden"
-            b5foam.style.visibility="visible"
-        },3000)
-        setTimeout(function(){
-            ye1.style.top="28%"
-            yyy.style.top="25%"
-            pipe.style.transform="translate(0%,0%) rotate(0deg)"
-           },4000)
-        f=38
-        update();
-    }
-}
-  function back5(){
-    if(f==38){
-        b5foam.style.transform="translate(535%,0%)"
-        setTimeout(function(){
-            yyy.style.visibility="visible";
-           },1000)
-        f=39
-        update();
-    }
-  }
+  else if(uld==2){
+    update();
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    dryslide.style.transitionDuration="0s"
+    dryslide.style.visibility="hidden"
+    l.style.transitionDuration="0s"
+    m.style.transitionDuration="0s"
+    l.style.visibility="hidden"
+    m.style.visibility="hidden"
+    dryslide.style.height="29.5%"
+    dryslide.style.width="4.5%"
+    dryslide.style.top="19.9%"
+    dryslide.style.left="14%"
+    line1.style.transitionDuration="0s"
+    line1.style.visibility="hidden"
+    ss.style.transitionDuration="0s"
+    ss.style.visibility="hidden"
+    
+   m.style.left="30%";
+   m.style.top="22%";
+   mytable.style.visibility="visible"
+    m.style.visibility="visible"
+    dryslide.style.visibility="visible"
 
-  function y2(){
-    if(f==39){
-        ye1.style.backgroundColor="Yellow"
-        yyy.style.backgroundColor="Red"
-        setTimeout(function(){
-            backgray.style.visibility="visible"
-            popbutton1.style.visibility="visible";
-        })
-
-        f=40   //  line 990 ...but nhi jaana
-        update();
-    }
+    setTimeout(function(){
+    m.style.transitionDuration="1s"
+    arrow.style.rotate="90deg";                   //this is commented newly
+    arrow.style.top="40%"
+    arrow.style.left="26%" 
+      setTimeout(()=>{ 
+        arrow.style.visibility="visible";
+        arrow.classList.add("blink");
+      },1000)
+    f=24;
+   // update();
+  },1000)
+   f=24000;
     
   }
-  
 
+  else if(f==23){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    z.style.transitionDuration="0s";
+    z.style.visibility="hidden";
+    hd2.style.transitionDuration="0s"
+    hd2.style.visibility="hidden";
+    captlc.style.transitionDuration="0s";
+    captlc.style.visibility="hidden";
+    TCback1.style.visibility="hidden";
+    TCfront1.style.visibility="hidden";
+    middleTLCchamber1.style.visibility="hidden"
+
+    tiles.style.visibility="visible";
+    table.style.visibility="visible"
+    
+    m.style.visibility="visible";
+    m.style.transition="all";
+    m.style.transitionDuration="1.8s"
+   
+   // m.style.left="65%";
+  // m.style.top="22%";
+
+   // mytable.style.visibility="visible"
+    l.style.visibility="visible";
+    m1.style.visibility="visible";
+    ss.style.visibility="visible";
+    ss.style.width="4.5%";//4.5
+    ss.style.height="31%";//29
+    ss.style.top="14%";//20
+    ss.style.left="47%";//14
+    
+   /* setTimeout(function(){
+      dryslide.style.opacity="100%"
+      dryslide.style.visibility="visible"
+      dryslide.style.transitionDuration="ease-in-out"
+      update();
+    },3500)*/
+
+    /* arrow.style.rotate="90deg";                   //this is commented newly
+      arrow.style.top="40%"
+      arrow.style.left="26%" 
+      setTimeout(()=>{ 
+        arrow.style.visibility="visible";
+        arrow.classList.add("blink");
+      },3800)  */
+    //f=24;
+     update();
+  }
+
+  else if(uld==3){
+    console.log('pau')
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    m.style.transitionDuration="0s"
+    m.style.visibility="hidden"
+    dryslide.style.transitionDuration="0s"
+    dryslide.style.visibility="hidden"
+   // wetslide.style.transitionDuration="0s"
+   // wetslide.style.visibility="hidden"
+    mytable.style.left="12%"
+    mytable.style.top="15%"
+    formula.style.visibility="visible"
+    usertable.style.visibility="visible"
+    submitresult.style.visibility="visible"
+    update();
+      arrow.style.rotate="-90deg";
+      arrow.style.top="33%"
+      arrow.style.left="79%"
+      setTimeout(()=>{
+        arrow.style.visibility="visible";
+        arrow.classList.add("blink");
+      },2000)
+      setTimeout(() => {
+        arrow.style.visibility="hidden";                
+        arrow.classList.remove("blink"); 
+      },5000);
+  }
+  else if(uld==4){
+    end.style.visibility="visible"
+    backgray1.style.visibility="visible"
+    confetti.style.visibility="visible"
+    confetti.classList.add("fall");
+  }
+ }
  
+ function pipepick(){
+   if(f==1){
+    console.log("hii")
+    arrow.style.visibility="hidden"
+    arrow.classList.remove("blink");
+     d.style.transform=" translate(0%,-700%) rotate(90deg)";
+     setTimeout(function moveright(){
+      setTimeout(function(){
+        d.style.transform="translate(0%,-1700%) rotate(90deg)";    //1900
+      },1000)
+      setTimeout(function(){
+        d.style.transform="translate(187%,-1700%) rotate(90deg)"; //1900
+      },2000)
+      setTimeout(function(){
+        d.style.transform="translate(187%,-930%) rotate(90deg)";  //940
+        f=2;
+        update();
+        arrow.style.visibility="visible";
+        arrow.style.rotate="90deg";
+        arrow.style.top="40%"
+        arrow.style.left="52.5%" 
+      },3000)},1000);
+
+      setTimeout(()=>{
+        arrow.classList.add("blink");
+      },4500)
+       f=2000
+   }
+
+  else if(f==2){
+      arrow.style.visibility="hidden";               
+      arrow.classList.remove("blink");
+       c.style.opacity="100%";  
+       
+       setTimeout(function(){
+        d.style.visibility="hidden"
+        d.style.transitionDuration="0s"
+        c.style.transitionDuration="0s"
+        c.style.visibility="hidden"
+        j.style.visibility="visible";
   
+        j.style.transform="translate(0%,-50%)"
+      },1000)
+                                                                     
+     setTimeout(function(){
+        j.style.transform="translate(-1690%,-50%)"      
+      },2000)
+  
+      setTimeout(function(){
+        j.style.transform="translate(-1690%,0%)";
+      },3000)
+  
+      setTimeout(function(){
+        d.style.visibility="visible"
+        c.style.visibility="visible"
+        j.style.transitionDuration="0s"
+        j.style.visibility="hidden"
+         d.style.top="65%"
+         d.style.left="0%"
+         c.style.top="54.2%"
+         c.style.left="38.8%"
+      },4000)
+  
+      setTimeout(function(){
+        c.style.transitionTimingFunction="ease"
+        c.style.visibility="hidden"
+        c.style.opacity="0%"
+        bottombeakerliquid.style.visibility="visible";
+        bottombeakerliquid.style.opacity="100%";
+        bottombeakerliquid.style.transitionDelay="0.3s"
+        d.style.transitionDuration="1s"
+      },5000)
 
-  /******************Step 4 : beaker se cylinder me foam daalna****************************/
-  function up1(){
-    if(f==41){       // S1 beaker se 1st cylinder me jaega 
-        b1foam.style.transform="translate(117%,-101%)"
-        setTimeout(function(){
-        b1foam.style.transform="translate(117%,-101%) rotate(-45deg)"
-        },1000)
-        setTimeout(function(){
-        //r1.style.visibility="visible"
-        b1foam.style.visibility="hidden"
-        c5.style.visibility="visible"
-        z1.innerHTML="77"
-        },2000)
-        setTimeout(function(){
-        // r1.style.transform="translate(-56%,70%) rotate(45deg)"
-         f=42  //just neeche
-         update(); 
-        },3000)
-    }
-  }
-  function up2(){
-    if(f==42){    // S2 se 2nd cylinder me
-        b2foam.style.transform="translate(76%,-104%)"
-        setTimeout(function(){
-        b2foam.style.transform="translate(76%,-104%) rotate(-45deg)"
-        },1000)
-        setTimeout(function(){
-       // r2.style.visibility="visible"
-        b2foam.style.visibility="hidden"
-        c4.style.visibility="visible"
-        z2.innerHTML="104"
-        },2000)
-        setTimeout(function(){
-         //r2.style.transform="translate(-86%,175%) rotate(45deg)"
-         f=43  //just neeche
-         update();
-        },3000)
-    }
-  }
-  function up3(){
-    if(f==43){     //S3 se cylinder me
-        b3foam.style.transform="translate(31%,-100%)"
-        setTimeout(function(){
-        b3foam.style.transform="translate(31%,-100%) rotate(-45deg)"
-        },1000)
-        setTimeout(function(){
-        //r3.style.visibility="visible"
-        b3foam.style.visibility="hidden"
-        c3.style.visibility="visible"
-        z3.innerHTML="137"
-        },2000)
-        setTimeout(function(){
-        // r3.style.transform="translate(30%,297%) rotate(45deg)"
-         f=44      //just neeche
-         update();
-        },3000)
-    }
+
+      setTimeout(function(){
+        d.style.transform="translate(187%,-1900%) rotate(90deg)"
+      },6000)
+       
+      setTimeout(function(){                                       
+        d.style.transform="translate(345%,-1900%) rotate(90deg)"
+      },7000)
+  
+      setTimeout(function(){
+        d.style.transform="translate(345%,-940%) rotate(90deg)" 
+        f=3; 
+        update();
+        arrow.style.visibility="visible";
+        arrow.style.rotate="90deg";
+        arrow.style.top="40%"
+        arrow.style.left="61.5%"
+     },8000)
+     setTimeout(()=>{arrow.classList.add("blink");
+    },9000)
+    f=3000
   }
 
-  function up4(){
-    if(f==44){       //S4 se cylinder me
-        b4foam.style.transform="translate(-9%,-100%)"
-        setTimeout(function(){
-        b4foam.style.transform="translate(-9%,-100%) rotate(-45deg)"
-        },1000)
-        setTimeout(function(){
-       // r4.style.visibility="visible"
-        b4foam.style.visibility="hidden"
-        c2.style.visibility="visible"
-        z4.innerHTML="104"
-        },2000)
-        setTimeout(function(){
-        // r4.style.transform="translate(150%,373%) rotate(45deg)"
-         f=45 //just neeche
-         update();
-        },3000)
-    }
+  else if(f==3){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink");
+
+    e.style.opacity="100%";          
+    
+    setTimeout(function(){
+      k.style.visibility="visible";
+      d.style.transitionDuration="0s"
+      d.style.visibility="hidden";
+      e.style.transitionDuration="0s"
+      e.style.visibility="hidden"
+
+      k.style.transform="translate(0%,-50%)"
+    },1000)
+
+    setTimeout(function(){
+      k.style.transform="translate(-2550%,-50%)"     
+   },2000)
+
+   setTimeout(function(){
+     k.style.transform="translate(-2550%,0%)"
+ },3000)
+
+ setTimeout(function(){
+     k.style.transitionDuration="0s"
+     k.style.visibility="hidden"
+     d.style.visibility="visible"
+     e.style.visibility="visible"
+     d.style.top="65%"
+     d.style.left="-25.5%"
+     e.style.top="54.3%"
+     e.style.left="39.4%" 
+ },4000)
+
+  setTimeout(function(){
+    e.style.transitionTimingFunction="ease"
+    e.style.visibility="hidden"
+    middlebeakerliquid.style.visibility="visible";
+    middlebeakerliquid.style.opacity="100%";
+    middlebeakerliquid.style.transitionDelay="0.3s"
+    d.style.transitionDuration="1s"
+  },5000)
+
+
+  setTimeout(function(){
+    d.style.transform="translate(345%,-1900%) rotate(90deg)"
+   },6000)
+   setTimeout(function(){
+     d.style.transform="translate(550%,-1900%) rotate(90deg)"   
+    },7000)
+    setTimeout(function(){
+     d.style.transform="translate(550%,-900%) rotate(90deg)"
+     f=4;
+     update();
+        arrow.style.visibility="visible";
+        arrow.style.rotate="90deg";
+        arrow.style.top="40%"
+        arrow.style.left="69.5%"
+    },8000)
+    setTimeout(()=>{
+      arrow.classList.add("blink");
+    },9000)
+     f=4000;
+
   }
 
+  else if(f==4){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink");     
+
+    over7ml.style.opacity="100%"    
+    setTimeout(function(){
+      update();
+      arrow.style.visibility="visible";
+      setTimeout(()=>{
+        arrow.classList.add("blink");
+      },600)
+     f=-1;
+    },1000)
+  }
+    else if(f==-1){
+      arrow.style.visibility="hidden";                
+      arrow.classList.remove("blink"); 
+
+      setTimeout(function(){
+        over7ml.style.opacity="0%"
+        g.style.opacity="100%"  
+      },1000)
+
+    setTimeout(function(){
+      update();
+      h.style.visibility="visible"
+       d.style.transitionDuration="0s"
+        d.style.visibility="hidden"
+        g.style.transitionDuration="0s"
+        g.style.visibility="hidden"
+  
+        h.style.transform="translate(0%,-50%)"
+      },2000)
+  
+      setTimeout(function(){
+        h.style.transform="translate(-3400%,-50%)";
+      },3000)
+      
+  
+     setTimeout(function(){
+      h.style.transform="translate(-3400%,0%)";   
+       },4000)
+  
+     setTimeout(function(){
+      h.style.transitionDuration="0s"
+      h.style.visibility="hidden"
+      d.style.transitionDuration="0s";
+      g.style.transitionDuration="0s";
+      d.style.visibility="visible"
+      g.style.visibility="visible"
+  
+      d.style.top="65%";                              
+     d.style.left="-59.5%"
+     g.style.top="46.7%";
+     g.style.left="39.2%";  
+       },5000)
+  
+    setTimeout(function(){
+    g.style.opacity="0%";
+    topbeakerliquid.style.visibility="visible";
+    topbeakerliquid.style.opacity="100%";
+    topbeakerliquid.style.transitionDelay="0.3s"
+     },6000)
+  
+     setTimeout(function(){
+       d.style.transitionDuration="1s"
+       d.style.transform="translate(550%,-1900%) rotate(90deg)"   
+       },7000)
+    
+       setTimeout(function(){
+        d.style.transform="translate(515%,-1900%) rotate(90deg)"
+       },8000)
+  
+       setTimeout(function(){
+         d.style.transform="translate(515%,-700%) rotate(90deg)"
+       },9000)
+  
+       setTimeout(function(){
+        d.style.transform="translate(475%,-60%) rotate(-0deg)"
+        f=5
+        update();
+        arrow.style.top="50%"
+        arrow.style.rotate="180deg"
+        arrow.style.left="26%"
+        arrow.style.visibility="visible";
+        setTimeout(()=>{
+         arrow.classList.add("blink");
+        },1000)
+        },10000)
+         f=5000
+    }
+
+  }
  
-  function up5(){
-    if(f==45){             //S5 se cylinder me jaega
-        b5foam.style.transform="translate(-55%,-102%)"
-        setTimeout(function(){
-        b5foam.style.transform="translate(-55%,-102%) rotate(-45deg)"
-        },1000)
-        setTimeout(function(){
-        //r5.style.visibility="visible"
-        b5foam.style.visibility="hidden"
-        c1.style.visibility="visible"
-        z5.innerHTML="137"
-        },2000)
-        setTimeout(function(){
-         //r5.style.transform="translate(255%,495%) rotate(45deg)"
-         update();
-        },3000)
-        setTimeout(function(){
-            mytable.style.visibility="hidden"
-            mytable1.style.visibility="visible"
-            i1.innerText="57"
-            i2.innerText="12"
-            i3.innerText="47"
-            i4.innerText="86"
-            i5.innerText="57"
 
-            c1.style.top="64%"
-            c2.style.top="55%"
-            c3.style.top="52%"
-            c4.style.top="52%"
-            c5.style.top="55%"
+ function clos(){
+  if(f==5){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    i.style.transform="translate(0%,-364%)";
 
-            c1.style.height="5%"
-            c2.style.height="14%"
-            c3.style.height="17%"
-            c4.style.height="17%"
-            c5.style.height="14%"
-            update();
-            f=46    //go to nxt function
-         },12000)
-    }
+    setTimeout(function(){
+      i.style.transform="translate(135.5%,-364%)";
+    },1000)
+
+    setTimeout(function(){
+      p1.style.transitionDuration="3s"
+      p1.innerHTML="Your mobile-phase solvent is ready!";
+      f=6;
+      update();
+      arrow.style.top="81%"
+      arrow.style.rotate="90deg"
+      arrow.style.left="86.5%"
+      arrow.style.visibility="visible";
+  setTimeout(()=>{
+    arrow.classList.add("blink");
+  },1000)
+    },2000)
+    f=6000;
+  }
+  else if(f==12){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+
+    i.style.transition="all"
+    i.style.transitionDuration="1s"
+    i.style.transform="translate(-15%,-364%)"
+    setTimeout(function(){
+      i.style.transform="translate(0%,0%)"
+      arrow.style.left="24.8%"
+      arrow.style.top="69.7%"
+      arrow.style.rotate="0deg"
+      arrow.style.visibility="visible";
+      f=13
+      update();
+    },1000)
+    setTimeout(() => {
+      arrow.classList.add("blink")
+    },2000);
+     f=13000;
   }
 
+  else if(f==15){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    i.style.transform="translate(0%,-364%)"
+    setTimeout(function(){
+    i.style.transform="translate(135%,-364%)"
+    update();
+    f=16;
+    arrow.style.top="58%"
+    arrow.style.left="77%"
+    arrow.style.rotate="-90deg"
+    arrow.style.visibility="visible";
+    },1000)
+    setTimeout(() => {
+      arrow.classList.add("blink")
+    },2000);
 
-  /**********step 3 complete************** */
+  }
+ }
+
+ function clostlc(){
+  if(f==16){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+
+    captlc.style.transform="translate(0%,-364%)"
+    setTimeout(function(){
+     captlc.style.transform="translate(-120%,-364%)"
+    },1000)
+    setTimeout(function(){
+      backgray.style.visibility="visible"
+      update();
+      factbutton.style.visibility="visible"
+     },2000)
+     f=17000
+  }
+
+  else if(f==17){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    captlc.style.transform="translate(-120%,-364%)"
+    setTimeout(function(){
+      captlc.style.transform="translate(50%,-364%)"
+    },1000)
+    setTimeout(function(){
+      captlc.style.transform="translate(50%,0%)"
+      arrow.style.left="45.5%"
+      arrow.style.top="68.8%"
+      arrow.style.rotate="0deg"
+      arrow.style.visibility="visible";
+      f=18;
+      update();
+    },2000)
+    setTimeout(() => {
+      arrow.classList.add("blink")
+    },3000);
+    f=18000;
+  }
+
+  else if(f==20){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    captlc.style.transform="translate(50%,-364%)"
+    setTimeout(function(){
+     captlc.style.transform="translate(-120%,-364%)"
+    },1000)
+     
+    setTimeout(() => {
+      update();
+    }, 3000);
+
+    setTimeout(function(){
+      wetslide.style.transitionTimingFunction="ease-in-out"
+      wetslide.style.visibility="visible"
+      wetslide.style.opacity="100%"
+      arrow.style.top="47%"
+      arrow.style.left="66%"
+      arrow.style.rotate="-90deg"
+      arrow.style.visibility="visible";
+      f=21;
+      update();
+    },5500)
+    setTimeout(() => {
+      arrow.classList.add("blink")
+    },6500);
+      f=21000; 
+  }
+
+  else if(f==21){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    ss.style.width="2.89%"
+    ss.style.left="45.6%"  
+    ss.src="images/wetslidenew1.png"
+    wetslide.style.transitionDuration="0s"
+    wetslide.style.visibility="hidden"
+    captlc.style.transform="translate(50%,-364%)"
+    setTimeout(function(){
+     captlc.style.transform="translate(50%,0%)"
+     arrow.style.top="63.5%"
+    arrow.style.left="33%"
+    arrow.style.rotate="90deg"
+    arrow.style.visibility="visible";
+     f=22;
+     update();
+    },1000)
+    setTimeout(() => {
+      arrow.classList.add("blink")
+    },2000);
+    f=22000
+  }
+ }
+
+ function pipepickbeak1(){
+  if(f==13){ 
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    pipettebeak.style.transform=" translate(0%,-700%) rotate(90deg)";
+    setTimeout(function(){
+      pipettebeak.style.transform="translate(0%,-1700%) rotate(90deg)";    
+    },1000)
+    setTimeout(function(){
+      pipettebeak.style.transform="translate(113%,-1700%) rotate(90deg)";    
+    },2000)
+    setTimeout(function(){
+      pipettebeak.style.transform="translate(113%,-920%) rotate(90deg)";  
+      arrow.style.visibility="visible";
+      arrow.style.rotate="90deg";
+      arrow.style.top="30%"
+      arrow.style.left="40%"                                      //beaker0 pipette
+      f=14
+      update();
+    },3000)
+    setTimeout(()=>{
+      arrow.classList.add("blink");
+    },4000)
+    f=14000;
+  }
+  
+  else if(f==14){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+
+    c.style.opacity="100%"
+    c.style.transitionTimingFunction="ease-in-out"
+    c.style.visibility="visible"
+    c.style.width="0.55%"
+    c.style.left="44.1%"
+    c.style.top="55.2%"
+
+    setTimeout(function(){
+      pipettebeak.style.transitionDuration="0s"
+      pipettebeak.style.visibility="hidden"
+      c.style.visibility="hidden"
+
+      j.style.visibility="visible";
+      j.style.width="1.05%"
+      j.style.left="61.6%"
+      j.style.top="29.18%"
+      },1000)
+
+    setTimeout(function(){
+      j.style.transitionDuration="1s"
+      j.style.transform="translate(-1690%,-50%)"
+    },2000)
+
+    setTimeout(function(){
+      j.style.transform="translate(-100%,-50%)"
+    },3000)
+
+    setTimeout(function(){
+      j.style.transform="translate(-100%,0%)"
+    },4000)
+
+    setTimeout(function(){
+      pipettebeak.style.left="34.2%"
+
+      c.style.visibility="visible"
+      c.style.width="0.55%"
+      c.style.left="60.75%"
+      c.style.top="55.2%"
+    },5000)
+
+    setTimeout(function(){
+      pipettebeak.style.transitionDuration="0s"
+      pipettebeak.style.visibility="visible"
+
+      j.style.transitionDuration="0s"
+      j.style.visibility="hidden"
+      middleTLCchamber1.style.visibility="visible"
+      middleTLCchamber1.style.opacity="100%"
+      c.style.visibility="hidden"
+      c.style.opacity="0%"
+    },6000)
+
+    setTimeout(function(){
+      pipettebeak.style.transitionDuration="1s"
+      pipettebeak.style.transform="translate(113%,-920%) rotate(90deg)"
+    },7000)
+
+    setTimeout(function(){
+      pipettebeak.style.transform="translate(113%,-1700%) rotate(90deg)"
+    },8000)
+
+    setTimeout(function(){
+      pipettebeak.style.transform="translate(-70%,-1700%) rotate(90deg)"
+    },9500)
+
+    setTimeout(function(){
+      pipettebeak.style.transform="translate(-70%,-700%) rotate(90deg)"
+    },10500)
+
+    setTimeout(function(){
+      pipettebeak.style.transform="translate(-70%,-60%) rotate(0deg)"
+      arrow.style.top="51%"
+      arrow.style.rotate="180deg"
+      arrow.style.left="30.5%"
+      arrow.style.visibility="visible";
+       f=15;
+      update();
+    },11500)
+    setTimeout(()=>{
+      arrow.classList.add("blink");
+    },12500)
+    f=15000
+    
+  }
+ }
+ 
+function ruler(){
+  if(f==7){   
+    arrow.style.visibility="hidden"             
+    arrow.classList.remove("blink");
+    m.style.transform="translate(-310%,0%)";        
+
+    setTimeout(function(){
+      m.style.transform="translate(-310%,-27.7%) rotate(-90deg)";  
+      f=8
+      update();
+      arrow.style.visibility="visible" 
+      arrow.style.left="26.5%"
+      arrow.style.top="54%"
+      setTimeout(()=>{
+        arrow.classList.add("blink");
+      },500)
+  
+    },2000)
+     f=8000;
+  }
+
+  else if(uld==0){
+    // setTimeout(function(){
+    m.style.transitionDuration="1.8s"
+    l.style.transitionDuration="1.7s"
+
+    //  l.style.transform="translate(75%,-61.5%) rotate(20deg)"     
+      m.style.transform="translate(-310%,-64.9%) rotate(-90deg)" 
+   // },1000)                                                    
+      uld=1;
+      update();
+  }
+
+  else if(f==24){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    m.style.transform="translate(-265%,0%)";   
+    setTimeout(function(){
+      base1.innerText="5"
+      base2.innerText="5"
+      base3.innerText="5"
+      base4.innerText="5"
+      arrow.style.visibility="visible";
+      arrow.style.rotate="-90deg";
+      arrow.style.top="40%"
+      arrow.style.left="24%" 
+      f=25;
+      update();
+    },2500)
+    setTimeout(()=>{
+      arrow.classList.add("blink");
+    },3500)
+    f=25000;
+  }
+
+  else if(f==25){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    m.style.top="40%"
+    setTimeout(function(){
+    c1.innerText="1"
+    arrow.style.visibility="visible";
+    arrow.style.rotate="-90deg";
+    arrow.style.top="40%"
+    arrow.style.left="24%" 
+    f=26;
+    update();
+    },1500)
+    setTimeout(()=>{
+      arrow.classList.add("blink");
+    },2500)
+    f=26000;
+  }
+
+  else if(f==26){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    m.style.top="32%"
+    setTimeout(function(){
+      c2.innerText="2.3"
+      arrow.style.visibility="visible";
+      arrow.style.rotate="-90deg";
+      arrow.style.top="40%"
+      arrow.style.left="24%"
+      f=27;
+      update();
+      },1500)
+      setTimeout(()=>{
+        arrow.classList.add("blink");
+      },2500)
+      f=27000;
+  }
+
+  else if(f==27){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    m.style.top="27.5%"
+    setTimeout(function(){
+      c3.innerText="3.4"
+      arrow.style.visibility="visible";
+      arrow.style.rotate="-90deg";
+      arrow.style.top="40%"
+      arrow.style.left="24%"
+      f=28;
+      update();
+      },1500)
+      setTimeout(()=>{
+        arrow.classList.add("blink");
+      },2500)
+      f=28000;
+  }
+
+  else if(f==28){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    m.style.top="25%"
+    setTimeout(function(){
+      c4.innerText="3.9"
+      arrow.style.top="81%"
+      arrow.style.rotate="90deg"
+      arrow.style.left="86.5%"
+      arrow.style.visibility="visible";
+      uld=3;
+      f=29;
+      update();
+      },1500)
+      setTimeout(()=>{
+        arrow.classList.add("blink");
+      },2500)
+      f=29000;
+  }
+}
+
+ function draw(){
+  if(f==8){
+    arrow.style.visibility="hidden"             
+    arrow.classList.remove("blink");
+     l.style.transform="translate(75%,-15%) rotate(20deg)"; 
+  
+     setTimeout(function(){
+      l.style.transform="translate(113%,-15%) rotate(20deg)"  
+      line.style.opacity="100%"
+      line.style.backgroundColor="black";
+      l.style.transitionTimingFunction="ease-in-out";
+     },3000)
+
+/* new changes setTimeout(function(){
+    l.style.transform="translate(75%,-61.5%) rotate(20deg)"     
+    m.style.transform="translate(-310%,-63.3%) rotate(-90deg)" 
+  },5000)                                                    
+
+  setTimeout(function(){
+    l.style.transform="translate(113%,-61.5%) rotate(20deg)"     
+    line1.style.opacity="100%"
+    line1.style.backgroundColor="black";
+    l.style.transitionTimingFunction="ease-in-out";
+
+  },7000)*/
+
+  setTimeout(function(){
+    l.style.transform="translate(0%,0%) rotate(0deg)"
+    m.style.transform="translate(0%,0%) rotate(0deg)"
+  },5000)
+
+  setTimeout(function(){
+    f=99
+    update();
+    popbutton1.style.visibility="visible";
+    backgray.style.visibility="visible";
+    setTimeout(()=>{
+      arrow.classList.add("blink");
+    },500)
+  },6500)
+   f=99000
+  }
+
+  else if(uld==1){
+    l.style.transform="translate(75%,-64.8%) rotate(20deg)";
+    setTimeout(function(){
+      l.style.transform="translate(113%,-64.8%) rotate(20deg)"     
+      line1.style.opacity="100%"
+      line1.style.visibility="visible"
+      line1.style.backgroundColor="black";
+      l.style.transitionTimingFunction="ease-in-out";
+  
+    },1600)
+
+    setTimeout(function(){
+      l.style.transform="translate(0%,0%) rotate(0deg)"
+      m.style.transform="translate(0%,0%) rotate(0deg)"
+    },2700)
+    
+    setTimeout(()=>{
+      redb.style.visibility="visible";
+      redb.classList.add("blink");
+    },3500)
+
+    setTimeout(function(){
+      dryslide.style.opacity="100%"
+      dryslide.style.visibility="visible"
+      dryslide.style.transitionDuration="ease-in-out"
+      redb.style.visibility="hidden";                
+      redb.classList.remove("blink"); 
+      update(); 
+      uld=2;
+    },7500)
+
+    arrow.style.rotate="90deg";                   //this is commented newly
+    arrow.style.visibility="visible";
+      arrow.style.top="81%"
+      arrow.style.left="86.5%"
+      setTimeout(() => {
+        update();
+        arrow.classList.add("blink");
+      }, 1000);
+  }
+}
+
+ function mov(){
+  if(f==10){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    pen.style.transform="translate(0%,-20%) rotate(60deg)"
+
+    setTimeout(function(){
+       pen.style.transform="translate(0%,-80%) rotate(60deg)"
+    },1000)
+
+    setTimeout(function(){
+      pen.style.transform="translate(49%,-80%) rotate(60deg)" 
+    },2000)
+
+    setTimeout(function(){
+      linedot.style.transitionDelay="1s"
+      linedot.style.opacity="100%";
+      pen.style.transform="translate(49%,-40%) rotate(60deg)"
+    },3000)
+
+    setTimeout(function(){
+      pen.style.transform="translate(0%,0%) rotate(0deg)"
+    },5000)
+
+    setTimeout(function(){
+      f=11
+      update();
+      arrow.style.visibility="visible";
+      arrow.style.top="81%"
+      arrow.style.left="86.5%"
+      setTimeout(() => {
+        arrow.classList.add("blink");
+      }, 1000);
+      
+    },6000)
+    f=11000;
+  }
+ }
+
+ function horizon(){
+  if(f==18){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    hd1.style.transitionDuration="0s";
+    hd1.style.visibility="hidden";
+    ss.style.visibility="visible";
+    arrow.style.top="62%"
+    arrow.style.left="29%"
+    arrow.style.rotate="90deg"
+    arrow.style.visibility="visible";
+    setTimeout(() => {
+      arrow.classList.add("blink")
+    },2000);
+    f=19;
+    update();
+  }
+ }
+
+  function holdfor(){
+  if(f==19){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    z.style.transform="translate(0%,-47%)";
+    setTimeout(function(){
+      z.style.transform="translate(53%,-47%)";
+    },1000)
+  
+    setTimeout(function(){
+      ss.style.transform="translate(0%,-145%)"
+      z.style.transform="translate(53%,-119%)"
+    },3500)
+   
+    setTimeout(function(){
+      ss.style.transform="translate(478%,-145%)"
+      z.style.transform="translate(105%,-119%)"
+    },5500)
+
+    setTimeout(function(){
+      ss.style.transform="translate(478%,5%)" 
+      z.style.transform="translate(98%,-58%) rotate(-60deg)"
+    },7500)
+
+    setTimeout(function(){
+      z.style.transform="translate(105%,-110%) rotate(0deg)"
+    },10000)
+
+    setTimeout(function(){
+      z.style.transform="translate(15%,-110%) rotate(0deg)"
+    },12000)
+
+    setTimeout(function(){
+      z.style.transform="translate(15%,0%) rotate(0deg)"
+      arrow.style.top="58%"
+      arrow.style.left="80%"
+      arrow.style.rotate="-90deg"
+      arrow.style.visibility="visible";
+      f=20;
+      update();
+    },13500)
+    setTimeout(() => {
+      arrow.classList.add("blink")
+    },14500);
+     f=20000;
+  }
+
+  else if(f==22){
+    arrow.style.visibility="hidden";                
+    arrow.classList.remove("blink"); 
+    setTimeout(function(){
+      z.style.transform="translate(15%,-80%)"  
+    },1000)
+
+    setTimeout(function(){
+      z.style.transform="translate(98%,-80%)" 
+    },2000)
+
+    setTimeout(function(){
+      z.style.transform="translate(98%,-60%) rotate(-60deg)"
+    },3000)
+     
+    setTimeout(function(){
+      ss.style.transform="translate(478%,-145%)"
+      z.style.transform="translate(100%,-117%)"  
+    },6000)
+
+    setTimeout(function(){
+      ss.style.transform="translate(0%,-145%)"
+      z.style.transform="translate(50%,-117%)"
+    },8000)
+
+    setTimeout(function(){
+      z.style.transform="translate(50%,-47%)";
+      ss.style.transform="translate(0%,0%)"
+     },9500)
+
+      setTimeout(function(){
+        ss.style.transitionDuration="0s"
+        ss.style.visibility="hidden"
+        hd2.style.visibility="visible"
+        z.style.transform="translate(5%,-47%)";
+     },12000)
+
+    setTimeout(() => {
+      z.style.transform="translate(5%,-47%)";
+    },13000);
+
+     setTimeout(function(){
+        z.style.transform="translate(0%,0%)";
+        arrow.style.top="81%"
+        arrow.style.rotate="90deg"
+        arrow.style.left="86.5%"
+        arrow.style.visibility="visible";
+        f=23;
+        update();
+      },14000)
+
+      setTimeout(()=>{
+        arrow.classList.add("blink");
+      },15000)
+  }
+  f=23000;
+  }
+  
+  const redb = document.querySelector(".redb");              
+  setTimeout(() => {
+    //arrow.classList.remove("blink");                             only settimeout bracket should be there
+  });
 
 
-
-
-/* **************Ye code mt dekhna openpop se....****************/
-
+  const arrow = document.querySelector(".arrow");              
+   setTimeout(() => {
+     //arrow.classList.remove("blink");                             only settimeout bracket should be there
+   });
+     
   function openPopup() {
-    if(f== 40){
+    if(f==99){
       document.getElementById("myPopup").style.display = "block";
     }
   }
@@ -1230,41 +1419,87 @@ function back4(){
   function closePopup() {
     document.getElementById("myPopup").style.display = "none";
     backgray.style.visibility="hidden";
-    popbutton1.style.transitionDuration="0s"
       popbutton1.style.visibility="hidden";
-      f=41 //go to nxt function
-      
+      f=9;
+        arrow.style.visibility="visible";
+        arrow.style.top="81%"
+        arrow.style.left="86.5%"
+    setTimeout(()=>{
+      arrow.classList.add("blink");
+    },1000)
+
   }
   
   function checkAnswer() {
     const selectedAnswer = document.querySelector('input[name="answer"]:checked').value;
-    const correctAnswer = "Protein isolate";
+    const correctAnswer = "7ml";
   
     if (selectedAnswer === correctAnswer) {
       alert("Correct!");
     } else {
-      alert("Wrong! The correct answer is Protein isolate.");
+      alert("Wrong! The correct answer is 7ml.");
     }
   
     closePopup();
   }
 
-  const utable = document.getElementById('usertable');
-  const submitButton = document.getElementById('submitresult');
-  const first=document.getElementById('first')
-  const second=document.getElementById('second')
-  const third=document.getElementById('third')
-  const fourth=document.getElementById('fourth')
-  const fifthr =document.getElementById('fifth')
+const openButton = document.getElementById('factbutton');
+const popup = document.getElementById('popup');
+const typingText = document.getElementById('typing-text');
 
-  const first1=document.getElementById('first1')
-  const second2=document.getElementById('second2')
-  const third3=document.getElementById('third3')
-  const fourth4=document.getElementById('fourth4')
-  const fifth5=document.getElementById('fifth5')
+function autotype(){
+  factbutton.style.visibility="hidden"
+  popup.style.display = 'block'; // Show the popup
+  
+  typeText('Chromatography was first devised at the University of Kazan by the Italian-born Russian scientist ,Mikhail Tsvet in 1900. !');
+  update();
+  closefactb.style.visibility="visible"
+}
 
-  var myinput=document.querySelector(".myinput")
-  submitButton.disabled = false; // Initially disable submit button
+function typeText(text) {
+  let i = 0;
+  const interval = setInterval(() => {
+    typingText.textContent += text.charAt(i);
+    i++;
+    if (i === text.length) {
+      clearInterval(interval);
+    }
+  }, 75); // Adjust the interval for typing speed
+}
+
+function closefact(){
+  popup.style.display="none"
+  backgray.style.visibility="hidden"
+  closefactb.style.transitionDuration="0s"
+  closefactb.style.visibility="hidden"
+
+  beaker0middle.style.visibility="hidden"
+  pipettebeak.style.transitionDuration="0s"
+  pipettebeak.style.visibility="hidden"
+  beaker0back.style.transitionDuration="0s"
+  beaker0back.style.visibility="hidden"
+  beaker0front.style.transitionDuration="0s"
+  beaker0front.style.visibility="hidden"
+ 
+  hd1.style.transitionDuration="0s"
+  hd1.style.visibility="visible"
+  forcepsmov.style.visibility="visible"
+
+   i.style.transitionDuration="0s"
+   i.style.visibility="hidden"
+   f=17;
+   update();
+   arrow.style.top="47%"
+   arrow.style.left="66%"
+   arrow.style.rotate="-90deg"
+   arrow.style.visibility="visible";
+   setTimeout(() => {
+     arrow.classList.add("blink")
+   },1500);
+
+}
+
+submitButton.disabled = false; // Initially disable submit button
 
   // Function to check if all inputs in the table are filled
   function areAllInputsFilled() {
@@ -1272,17 +1507,6 @@ function back4(){
     return !Array.from(inputs).some(input => input.value === '');
   }
   
-  var j1=document.querySelector("#j1")
-  var j2=document.querySelector("#j2")
-  var j3=document.querySelector("#j3")
-  var j4=document.querySelector("#j4")
-  var j5=document.querySelector("#j5")
-  var k1=document.querySelector("#k1")
-  var k2=document.querySelector("#k2")
-  var k3=document.querySelector("#k3")
-  var k4=document.querySelector("#k4")
-  var k5=document.querySelector("#k5")
-  var fifth=document.querySelector("#fifth")
   // Event listener for submit button click (can be changed to other events)
   submitButton.addEventListener('click', () => {
     if (areAllInputsFilled()) {
@@ -1290,35 +1514,23 @@ function back4(){
       second.disabled=true;
       third.disabled=true;
       fourth.disabled=true;
-      fifthr.disabled=true;
-      first1.disabled=true;
-      second2.disabled=true;
-      third3.disabled=true;
-      fourth4.disabled=true;
-      fifth5.disabled=true;
-    
       submitButton.disabled =true; 
-      j1.innerText="54"
-      j2.innerText="108"
-      j3.innerText="174"
-      j4.innerText="108"
-      j5.innerText="57"
-
-      k1.innerText="74.02"
-      k2.innerText="11.53"
-      k3.innerText="34.30"
-      k4.innerText="82.69"
-      k5.innerText="57.90"
+      d1.innerText="0.2"
+      d2.innerText="0.46"
+      d3.innerText="0.68"
+      d4.innerText="0.78"
       update();
-      f=48;
+      //f=30;
+      uld=4;
       alert('All inputs are filled!');
     } else {
       alert('Please fill in all required fields.');
     }
   });
 
-  const arrow = document.querySelector(".arrow");              
-   setTimeout(() => {
-              
-   });
-     
+  const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+// Check the initial state (optional)
+if (mediaQuery.matches) {
+  // Code to execute when the media query applies initially
+}

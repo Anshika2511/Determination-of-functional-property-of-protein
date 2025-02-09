@@ -1,13 +1,13 @@
-var hs1=document.querySelector("#hs1")
-var hs2=document.querySelector("#hs2")
-var hs3=document.querySelector("#hs3")
-var hs4=document.querySelector("#hs4")
-var hs5=document.querySelector("#hs5")
-var hcylinder=document.querySelector("#hcylinder")
-var hpowder=document.querySelector("#hpowder")
-var hwm=document.querySelector("#hwm")
-var hmachine=document.querySelector("#hmachine")
-var hspatula=document.querySelector("#hspatula")
+var hpencil=document.querySelector("#hpencil")
+var hintroslide=document.querySelector("#hintroslide")
+var hforceps1=document.querySelector("#hforceps1")
+var hcap=document.querySelector("#hcap")
+var hpenintro=document.querySelector("#hpenintro")
+var hpipette=document.querySelector("#hpipette")
+var hTCfront=document.querySelector("#hTCfront")
+var hb1front=document.querySelector("#hb1front")
+var hb2front=document.querySelector("#hb2front")
+var hb3front=document.querySelector("#hb3front")
 var hovt = document.querySelector("#hovt")
 var hcounter=0
 var hvalue="none"
@@ -18,145 +18,142 @@ body.addEventListener("mouseover",function(){
     steper()
 })
 
-hs1.addEventListener("mouseenter",function(){
+hpencil.addEventListener("mouseenter",function(){
     hcounter+=1
     hovt.style.transitionDuration="0.5s"
     hovt.style.visibility="visible"
-    hovt.innerText="S1 beaker"
-    hovt.style.top="42%"
+    hovt.innerText="Pencil"
+    hovt.style.top="72%"
+    hovt.style.left="29%"
+
+})
+hpencil.addEventListener("mouseout",function(){
+    hovt.style.transitionDuration="0s"
+    hovt.style.visibility="hidden"
+})
+
+hintroslide.addEventListener("mouseenter",function(){
+    hcounter+=1
+    hovt.style.transitionDuration="0.5s"
+    hovt.style.visibility="visible"
+    hovt.innerText="TLC plate"
+    hovt.style.top="52%"
     hovt.style.left="45%"
 
 })
-hs1.addEventListener("mouseout",function(){
+hintroslide.addEventListener("mouseout",function(){
     hovt.style.transitionDuration="0s"
     hovt.style.visibility="hidden"
 })
 
-hs2.addEventListener("mouseenter",function(){
+hforceps1.addEventListener("mouseenter",function(){
     hcounter+=1
     hovt.style.transitionDuration="0.5s"
     hovt.style.visibility="visible"
-    hovt.innerText="S2 beaker"
-    hovt.style.top="42%"
-    hovt.style.left="53%"
+    hovt.innerText="Forceps"
+    hovt.style.top="69%"
+    hovt.style.left="48%"
 
 })
-hs2.addEventListener("mouseout",function(){
+hforceps1.addEventListener("mouseout",function(){
     hovt.style.transitionDuration="0s"
     hovt.style.visibility="hidden"
 })
 
-hs3.addEventListener("mouseenter",function(){
+hcap.addEventListener("mouseenter",function(){
     hcounter+=1
     hovt.style.transitionDuration="0.5s"
     hovt.style.visibility="visible"
-    hovt.innerText="S3 beaker"
-    hovt.style.top="42%"
-    hovt.style.left="58%"
-
-})
-hs3.addEventListener("mouseout",function(){
-    hovt.style.transitionDuration="0s"
-    hovt.style.visibility="hidden"
-})
-
-hs4.addEventListener("mouseenter",function(){
-    hcounter+=1
-    hovt.style.transitionDuration="0.5s"
-    hovt.style.visibility="visible"
-    hovt.innerText="S4 beaker"
-    hovt.style.top="42%"
-    hovt.style.left="68%"
-
-})
-hs4.addEventListener("mouseout",function(){
-    hovt.style.transitionDuration="0s"
-    hovt.style.visibility="hidden"
-})
-
-hs5.addEventListener("mouseenter",function(){
-    hcounter+=1
-    hovt.style.transitionDuration="0.5s"
-    hovt.style.visibility="visible"
-    hovt.innerText="S5 beaker"
-    hovt.style.top="42%"
-    hovt.style.left="75%"
-
-})
-hs5.addEventListener("mouseout",function(){
-    hovt.style.transitionDuration="0s"
-    hovt.style.visibility="hidden"
-})
-
-hpowder.addEventListener("mouseenter",function(){
-    hcounter+=1
-    hovt.style.transitionDuration="0.5s"
-    hovt.style.visibility="visible"
-    hovt.innerText="Protein isolate"
-    hovt.style.top="43%"
-    hovt.style.left="30%"
-
-})
-hpowder.addEventListener("mouseout",function(){
-    hovt.style.transitionDuration="0s"
-    hovt.style.visibility="hidden"
-})
-
-
-
-hspatula.addEventListener("mouseenter",function(){
-    hcounter+=1
-    hovt.style.transitionDuration="0.5s"
-    hovt.style.visibility="visible"
-    hovt.innerText="Spatula"
-    hovt.style.top="72%"
-    hovt.style.left="30%"
-
-})
-hspatula.addEventListener("mouseout",function(){
-    hovt.style.transitionDuration="0s"
-    hovt.style.visibility="hidden"
-})
-
-hwm.addEventListener("mouseenter",function(){
-    hcounter+=1
-    hovt.style.transitionDuration="0.5s"
-    hovt.style.visibility="visible"
-    hovt.innerText="Weighing machine"
-    hovt.style.top="45%"
+    hovt.innerText="TLC chamber lid"
+    hovt.style.top="55%"
     hovt.style.left="23%"
 
 })
-hwm.addEventListener("mouseout",function(){
+hcap.addEventListener("mouseout",function(){
     hovt.style.transitionDuration="0s"
     hovt.style.visibility="hidden"
 })
 
-hmachine.addEventListener("mouseenter",function(){
+hpenintro.addEventListener("mouseenter",function(){
     hcounter+=1
     hovt.style.transitionDuration="0.5s"
     hovt.style.visibility="visible"
-    hovt.innerText="Whipping machine"
-    hovt.style.top="25%"
-    hovt.style.left="45%"
+    hovt.innerText="Pen"
+    hovt.style.top="63%"
+    hovt.style.left="20%"
 
 })
-hmachine.addEventListener("mouseout",function(){
+hpenintro.addEventListener("mouseout",function(){
     hovt.style.transitionDuration="0s"
     hovt.style.visibility="hidden"
 })
 
-hcylinder.addEventListener("mouseenter",function(){
+hpipette.addEventListener("mouseenter",function(){
     hcounter+=1
     hovt.style.transitionDuration="0.5s"
     hovt.style.visibility="visible"
-    hovt.innerText="Measuring cylinder"
-    hovt.style.top="40%"
-    hovt.style.left="10%"
+    hovt.innerText="Pipette"
+    hovt.style.top="69%"
+    hovt.style.left="20%"
 
 })
+hpipette.addEventListener("mouseout",function(){
+    hovt.style.transitionDuration="0s"
+    hovt.style.visibility="hidden"
+})
 
-hcylinder.addEventListener("mouseout",function(){
+hTCfront.addEventListener("mouseenter",function(){
+    hcounter+=1
+    hovt.style.transitionDuration="0.5s"
+    hovt.style.visibility="visible"
+    hovt.innerText="TLC chamber"
+    hovt.style.top="45%"
+    hovt.style.left="36%"
+
+})
+hTCfront.addEventListener("mouseout",function(){
+    hovt.style.transitionDuration="0s"
+    hovt.style.visibility="hidden"
+})
+
+hb1front.addEventListener("mouseenter",function(){
+    hcounter+=1
+    hovt.style.transitionDuration="0.5s"
+    hovt.style.visibility="visible"
+    hovt.innerText="Distilled water"
+    hovt.style.top="45%"
+    hovt.style.left="52%"
+
+})
+hb1front.addEventListener("mouseout",function(){
+    hovt.style.transitionDuration="0s"
+    hovt.style.visibility="hidden"
+})
+
+hb2front.addEventListener("mouseenter",function(){
+    hcounter+=1
+    hovt.style.transitionDuration="0.5s"
+    hovt.style.visibility="visible"
+    hovt.innerText="Ethanol"
+    hovt.style.top="45%"
+    hovt.style.left="63%"
+
+})
+hb2front.addEventListener("mouseout",function(){
+    hovt.style.transitionDuration="0s"
+    hovt.style.visibility="hidden"
+})
+
+hb3front.addEventListener("mouseenter",function(){
+    hcounter+=1
+    hovt.style.transitionDuration="0.5s"
+    hovt.style.visibility="visible"
+    hovt.innerText="Ethyl acetate"
+    hovt.style.top="45%"
+    hovt.style.left="69.9%"
+
+})
+hb3front.addEventListener("mouseout",function(){
     hovt.style.transitionDuration="0s"
     hovt.style.visibility="hidden"
 })
